@@ -1,22 +1,10 @@
 import './App.css';
-import { addProduct } from './services/api';
+import { AppRouter } from './routes/AppRouter';
 
-async function App() {
-  const data = await addProduct(
-    'loco',
-    'algo loco',
-    'http://algoloco.hpegs',
-    false,
-    12.99,
-    'buhardilla'
-  );
-  console.log(data);
+function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Product Search</h1>
-      </header>
-      <div />
+      <AppRouter />
     </div>
   );
 }
