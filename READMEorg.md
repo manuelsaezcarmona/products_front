@@ -83,10 +83,7 @@ He usado dos implementaciones:
 
 #### Uso de constantes
 
-He incorporado el fichero constants.js donde recogo lo que son las variables de entorno.
-Normalmente las incorporo en un fichero .env y se recogerian a traves de `process.env.VARNAME`
-
-No es buena práctica incluir estos ficheros como parte del repositorio y por cuestión de practica lo he incluido en el proyecto.
+He incorporado el fichero constants.js donde recogo los parametros que van a servir para filtrar los resultados obtenidos por seccion .
 
 ### Mejoras.
 
