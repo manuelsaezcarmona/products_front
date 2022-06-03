@@ -1,3 +1,13 @@
-export const sections = ['baño', 'dormitorio', 'cocina', 'salon', 'terraza', 'comedor', 'despacho'];
+export const SECTIONS = ['baño', 'dormitorio', 'cocina', 'salon', 'terraza', 'comedor', 'despacho'];
+export const SECTIONSOBJ = {
+  BAÑO: 'baño',
+  DORMITORIO: 'dormitorio',
+  COCINA: 'cocina',
+  SALON: 'salon',
+  TERRAZA: 'terraza',
+  COMEDOR: 'comedor',
+  DESPACHO: 'despacho'
+};
 
-export const orderParams = ['precio', 'nombre', 'seccion'];
+// map. Object.values
+export const SORT_OPTIONS = ['precio', 'nombre', 'seccion'];

@@ -1,13 +1,8 @@
-// EndPoints
-
-// localhost:8000/api/products/search?term=sin -- Query
-
 export const getAllProducts = async () => {
-  // localhost:8000/api/products/  - GETALL
   const baseURL = process.env.REACT_APP_API_URL;
-  const collection = 'api/products';
+  const resourcePath = 'api/products';
   try {
-    const resp = await fetch(`${baseURL}/${collection}/`);
+    const resp = await fetch(`${baseURL}/${resourcePath}/`);
     const data = await resp.json();
     return data;
   } catch (error) {
@@ -15,13 +10,12 @@ export const getAllProducts = async () => {
   }
 };
 
-export const getProductsBySearch = async (term) => {
-  // localhost:8000/api/products/search?term=mampara
+export const searchProductsByTitleTerm = async (term) => {
   const baseURL = process.env.REACT_APP_API_URL;
-  const collection = 'api/products';
-  const resource = 'search?term';
+  const resourcePath = 'api/products';
+  const queryParam = 'search?term';
   try {
-    const resp = await fetch(`${baseURL}/${collection}/${resource}=${term}`);
+    const resp = await fetch(`${baseURL}/${resourcePath}/${queryParam}=${term}`);
     const data = await resp.json();
     return data;
   } catch (error) {
@@ -41,17 +35,17 @@ export const addProduct = async (
 
   // localhost:8000/api/products/  -POST
   const baseURL = process.env.REACT_APP_API_URL;
-  const collection = 'api/products';
+  const resourcePath = 'api/products';
 
   try {
-    const resp = await fetch(`${baseURL}/${collection}/`, {
+    const resp = await fetch(`${baseURL}/${resourcePath}/`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8'
       },
       body: JSON.stringify(product)
     });
-    const result = resp.json();
+    const result = await resp.json();
     return result;
   } catch (error) {
     return error.message;

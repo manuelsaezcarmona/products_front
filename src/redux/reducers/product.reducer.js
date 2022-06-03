@@ -1,7 +1,14 @@
 // import { types } from '../actiontypes';
 
+export const PRODUCTS_STATE = {
+  PRODUCTS: 'products',
+  PRODUCT_ADDED: 'productAdded',
+  ALL_PRODUCTS: 'allProducts',
+  FILTERED_PRODUCTS: 'filteredProducts'
+};
+
 const initialState = {
-  products: [
+  [PRODUCTS_STATE.PRODUCTS]: [
     {
       productName: 'sinfonier',
       description: 'Un sinfonier para el lado de la cama',
@@ -24,7 +31,7 @@ const initialState = {
       id: '6298d64f955b7b7648a8c40d'
     }
   ],
-  productAdded: {
+  [PRODUCTS_STATE.PRODUCT_ADDED]: {
     productName: 'sinfonier',
     description: 'Un sinfonier para el lado de la cama',
     imageURL: 'https://eltallerdelmueble.es/wp-content/uploads/2016/08/d012b.jpg',
@@ -34,7 +41,7 @@ const initialState = {
     __v: 0,
     id: '6298d56d8fa8f2eb4e7e24c3'
   },
-  Allproducts: [
+  [PRODUCTS_STATE.ALL_PRODUCTS]: [
     {
       productName: 'sinfonier',
       description: 'Un sinfonier para el lado de la cama',
@@ -113,7 +120,7 @@ const initialState = {
       id: '6299a10982a73cce5c5cc243'
     }
   ],
-  filteredProducts: [
+  [PRODUCTS_STATE.FILTERED_PRODUCTS]: [
     {
       productName: 'Mesa de comedor madera maciza de acacia',
       description:
