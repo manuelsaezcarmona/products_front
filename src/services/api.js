@@ -16,3 +16,17 @@ export const getAllProducts = async () => {
     return error.message;
   }
 };
+
+export const getProductsBySearch = async (term) => {
+  // localhost:8000/api/products/search?term=mampara
+  const baseURL = process.env.REACT_APP_API_URL;
+  const collection = 'api/products';
+  const resource = 'search?term';
+  try {
+    const resp = await fetch(`${baseURL}/${collection}/${resource}=${term}`);
+    const data = await resp.json();
+    return data;
+  } catch (error) {
+    return error.message;
+  }
+};

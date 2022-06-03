@@ -1,8 +1,8 @@
 import './App.css';
-import { getAllProducts } from './services/api';
+import { getProductsBySearch } from './services/api';
 
 async function App() {
-  const data = await getAllProducts();
+  const data = await getProductsBySearch('sin');
   console.log(data);
   return (
     <div className="App">
