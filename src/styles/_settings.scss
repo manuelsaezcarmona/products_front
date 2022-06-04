@@ -3,7 +3,8 @@ $white-background: #f2f6f9;
 $white-oficial-background: #fafafa;
 $colorborder: #ebebeb;
 $black-dark: #1a1a1a;
-$gray-normal: #979797;
+$gray-normal: #c7c6c6;
+$gray-light: #f9f9f9;
 $gray-cardproduct: #294a5a;
 
 // fonts
@@ -19,9 +20,9 @@ $orderselectFont: 'Khbaph';
   padding: 0;
 }
 
-html {
-  background-color: $white-oficial-background;
+.App {
   color: $black-dark;
+  font-family: $productCardFont;
 }
 
 // breackpoints
@@ -29,7 +30,6 @@ html {
 // mobile.
 
 // Tablet
-
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .App {
     background-color: red;
@@ -37,7 +37,6 @@ html {
 }
 
 // Laptop
-
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .App {
     background-color: greenyellow;
@@ -45,7 +44,6 @@ html {
 }
 
 // Desktop
-
 @media only screen and (min-width: 1025px) {
   .App {
     background-color: orange;
