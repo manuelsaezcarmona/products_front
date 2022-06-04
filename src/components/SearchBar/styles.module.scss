@@ -1,0 +1,26 @@
+@import '../../styles/settings.scss';
+
+.search__container {
+  text-decoration: none;
+  color: $black-dark;
+  display: flex;
+  align-items: center;
+}
+
+.search__input {
+  outline: none;
+  border: none;
+  background-color: $gray-light;
+  font-size: 0.6em;
+  padding: 0.4em;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.search__icon {
+  font-size: 1.2em;
+  margin-left: 0.2em;
+}
+
+@media only screen and (min-width: 481px) {
+}
