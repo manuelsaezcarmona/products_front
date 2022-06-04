@@ -29,6 +29,40 @@ const initialState = {
       section: 'habitaciones',
       __v: 0,
       id: '6298d64f955b7b7648a8c40d'
+    },
+    {
+      productName: 'Mesa de comedor madera maciza de acacia',
+      description:
+        'Esta llamativa mesa de comedor tiene un estilo distintivo y natural y será un gran aporte para su comedor o cocina.',
+      imageURL:
+        'https://images.ssstatic.com/mesa-de-comedor-madera-maciza-de-acacia-180x90-cm-71251664z0-16471267.jpg',
+      isFavourite: true,
+      price: 104.99,
+      section: 'comedor',
+      __v: 0,
+      id: '6298d8cf955b7b7648a8c411'
+    },
+    {
+      productName: 'Mesa de baño en madera',
+      description: 'productos en madera para darle a tu baño un toque en estilo natural',
+      imageURL:
+        'https://assets.leroymerlin.es/is/image/lmes/15769985-0400/estanteria-2-estantes-lotus-madera-27x70.jpg?$lmesBgMobile$&fit=constrain,0',
+      isFavourite: false,
+      price: 85.99,
+      section: 'baño',
+      __v: 0,
+      id: '6298d964955b7b7648a8c413'
+    },
+    {
+      productName: 'jarron',
+      description: 'productos en madera para darle a tu baño un toque en estilo natural',
+      imageURL:
+        'https://assets.leroymerlin.es/is/image/lmes/15769985-0400/estanteria-2-estantes-lotus-madera-27x70.jpg?$lmesBgMobile$&fit=constrain,0',
+      isFavourite: false,
+      price: 15.99,
+      section: 'baño',
+      __v: 0,
+      id: '6298de51913731ca34285593'
     }
   ],
   [PRODUCTS_STATE.PRODUCT_ADDED]: {
