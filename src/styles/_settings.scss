@@ -22,5 +22,36 @@ $orderselectFont: 'Khbaph';
 html {
   background-color: $white-oficial-background;
   color: $black-dark;
-  font-family: $orderselectFont;
+}
+
+.App {
+  background-color: beige;
+}
+
+// breackpoints
+
+// mobile.
+
+// Tablet
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .App {
+    background-color: red;
+  }
+}
+
+// Laptop
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .App {
+    background-color: greenyellow;
+  }
+}
+
+// Desktop
+
+@media only screen and (min-width: 1025px) {
+  .App {
+    background-color: orange;
+  }
 }
