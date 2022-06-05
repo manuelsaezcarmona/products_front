@@ -3,10 +3,9 @@
 .productCard {
   display: flex;
   flex-direction: column;
-  border: 1px solid bisque;
-  align-items: center;
   justify-content: space-between;
   padding: 10px;
+  min-height: 225px;
 }
 .productCard__imgcontainer {
   position: relative;
@@ -25,8 +24,16 @@
   top: 0.2em;
   right: 0.2em;
 }
+.productCard__summary {
+  display: flex;
+  flex-direction: column;
+  min-height: 75px;
+  justify-content: space-between;
+  align-items: center;
+}
 .productCard__name {
   font-family: $productCardFont;
+  line-height: 24px;
 }
 .productCard__price {
   font-family: $searchResultsHeader;
