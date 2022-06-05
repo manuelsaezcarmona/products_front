@@ -60,8 +60,9 @@ export default function AddProduct() {
               classTitle: styles.addproduct__optiontitle,
               optionValues: sections
             }}
+            name="section"
             value={section}
-            onChange={handleProductValueInputChange}
+            handleChange={handleProductValueInputChange}
           />
         </fieldset>
         <fieldset className={styles.addproduct_group}>
