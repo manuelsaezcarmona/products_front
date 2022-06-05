@@ -8,15 +8,15 @@ export default function CustomSelect({ selectProps }) {
     classTitle: 'Classname Title',
     classOption: 'classname for the opcion"
     optionValues: []
-  }; */
+  };   PropTypes */
 
   return (
-    <select name={selectProps.selectName} className={selectProps.classTitle} defaultValue="">
+    <select name={selectProps.selectName} className={selectProps.classSelect} defaultValue="">
       <option value="" disabled className={selectProps.classTitle}>
         {selectProps.selectTitle}
       </option>
       {selectProps.optionValues.map((value) => (
-        <option key={`${value}-id`} value={value}>
+        <option key={`${value}-id`} value={value} className={selectProps.classOption}>
           {value}
         </option>
       ))}
