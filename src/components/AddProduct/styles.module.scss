@@ -3,10 +3,13 @@
 .addProduct__container {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .addProduct {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
   padding: 0.5em 1em;
 }
 .addproduct_header {
@@ -48,4 +51,10 @@
   display: flex;
   justify-content: center;
   column-gap: 1em;
+}
+
+@media (min-width: 769px) {
+  .addProduct {
+    max-width: 768px;
+  }
 }
