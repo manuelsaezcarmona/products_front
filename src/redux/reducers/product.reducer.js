@@ -63,6 +63,50 @@ const initialState = {
       section: 'baño',
       __v: 0,
       id: '6298de51913731ca34285593'
+    },
+    {
+      productName: 'sinfonier',
+      description: 'Un sinfonier para el lado de la cama',
+      imageURL: 'https://eltallerdelmueble.es/wp-content/uploads/2016/08/d012b.jpg',
+      isFavourite: false,
+      price: 12.99,
+      section: 'habitaciones',
+      __v: 0,
+      id: '6298d56d8fa8f2eb4e7e24c3'
+    },
+    {
+      productName: 'mampara',
+      description: 'Mampara de ducha para el baño',
+      imageURL:
+        'https://www.decorabano.com/media/uploaded_images/mampara-frontal-1fijo-1corredera-bro-torvisco.jpg.1920x1920_q85_box-0%2C0%2C2366%2C2366_crop_detail.jpg',
+      isFavourite: true,
+      price: 64.99,
+      section: 'habitaciones',
+      __v: 0,
+      id: '6298d64f955b7b7648a8c40d'
+    },
+    {
+      productName: 'mampara A BORRAR',
+      description: 'Mampara de ducha para el baño',
+      imageURL:
+        'https://www.decorabano.com/media/uploaded_images/mampara-frontal-1fijo-1corredera-bro-torvisco.jpg.1920x1920_q85_box-0%2C0%2C2366%2C2366_crop_detail.jpg',
+      isFavourite: true,
+      price: 64.99,
+      section: 'habitaciones',
+      __v: 0,
+      id: '6298d674955b7b7648a8c40f'
+    },
+    {
+      productName: 'Mesa de comedor madera maciza de acacia',
+      description:
+        'Esta llamativa mesa de comedor tiene un estilo distintivo y natural y será un gran aporte para su comedor o cocina.',
+      imageURL:
+        'https://images.ssstatic.com/mesa-de-comedor-madera-maciza-de-acacia-180x90-cm-71251664z0-16471267.jpg',
+      isFavourite: true,
+      price: 104.99,
+      section: 'comedor',
+      __v: 0,
+      id: '6298d8cf955b7b7648a8c411'
     }
   ],
   [PRODUCTS_STATE.PRODUCT_ADDED]: {
