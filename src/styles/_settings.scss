@@ -25,6 +25,16 @@ $orderselectFont: 'Khbaph';
   font-family: $productCardFont;
 }
 
+.inputtext {
+  outline: none;
+  border: none;
+  background-color: $gray-light;
+  font-size: 0.6em;
+  padding: 0.4em;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
 // breackpoints
 
 // mobile.
