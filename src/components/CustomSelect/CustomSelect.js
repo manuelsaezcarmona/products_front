@@ -11,7 +11,7 @@ export default function CustomSelect({ selectProps }) {
   }; */
 
   return (
-    <select name={selectProps.selectName} className={selectProps.classTitle} defaultValue="">
+    <select name={selectProps.selectName} className={selectProps.classSelect} defaultValue="">
       <option value="" disabled className={selectProps.classTitle}>
         {selectProps.selectTitle}
       </option>
