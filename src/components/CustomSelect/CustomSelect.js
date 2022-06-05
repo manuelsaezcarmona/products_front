@@ -8,7 +8,7 @@ export default function CustomSelect({ selectProps }) {
     classTitle: 'Classname Title',
     classOption: 'classname for the opcion"
     optionValues: []
-  }; */
+  };   PropTypes */
 
   return (
     <select name={selectProps.selectName} className={selectProps.classSelect} defaultValue="">
