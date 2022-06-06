@@ -5,7 +5,7 @@ import { useForm } from '../../hooks/useForm';
 import CustomSelect from '../CustomSelect/CustomSelect';
 import pathimg from '../../assets/empty.jpg';
 import { useImgData } from '../../hooks/useImgData';
-import { useValidationForm } from '../../hooks/useValidator';
+// import { useValidationForm } from '../../hooks/useValidator';
 
 export default function AddProduct() {
   const sections = Object.values(SECTIONS);
@@ -17,10 +17,20 @@ export default function AddProduct() {
 
   const [imgFile, handleFileChange] = useImgData(false);
 
+  const [formError, setFormError] = useState({
+    productName: false,
+    description: false,
+    price: false,
+    section: false
+  });
   // eslint-disable-next-line no-unused-vars
-  const [formError, handleformErrorChange] = useValidationForm({ ...ADD_PRODUCT_INITIAL_STATE }, [
+  const errorEntries = Object.entries(formError).filter((item) => item[1] === true);
+
+  // eslint-disable-next-line max-len
+  /*   const [formError, handleformErrorChange] = useValidationForm({ ...ADD_PRODUCT_INITIAL_STATE }, [
     'isFavourite'
   ]);
+ */
 
   const { productName, description, price, section } = formAddProductValues;
 
@@ -34,7 +44,21 @@ export default function AddProduct() {
 
   const handleAddProductSubmit = (e) => {
     e.preventDefault();
-    console.log(formError);
+    // Validacion de los elementos.
+    const formFields = Object.entries(formAddProductValues);
+    formFields.forEach((field) => {
+      if (!field[1]) {
+        // eslint-disable-next-line no-param-reassign
+        field[1] = true;
+      } else {
+        // eslint-disable-next-line no-param-reassign
+        field[1] = false;
+      }
+    });
+    const objFields = Object.fromEntries(formFields);
+
+    setFormError(objFields);
+    console.error(formError);
   };
 
   return (
@@ -45,7 +69,6 @@ export default function AddProduct() {
           <input
             type="text"
             className={`${styles.addproduct__text} inputtext`}
-            required
             placeholder="Añade un nombre"
             maxLength={20}
             name="productName"
@@ -55,7 +78,6 @@ export default function AddProduct() {
           <input
             type="text"
             className={`${styles.addproduct__text} inputtext`}
-            required
             placeholder="Escriba una pequeña descripción"
             maxLength={60}
             name="description"
@@ -114,7 +136,6 @@ export default function AddProduct() {
             step=".01"
             name="price"
             className={`${styles.addproduct__text} inputtext`}
-            required
             placeholder="Indica el precio "
             value={price}
             onChange={handleProductValueInputChange}
@@ -140,6 +161,19 @@ export default function AddProduct() {
           </button>
         </div>
       </form>
+      {errorEntries.length !== 0 && (
+        <div className="errors">
+          <p className="errors__title">Error de validacion para los siguientes campos: </p>
+          {imgFile === null && <p className="errors__item">Solo se puede postear con una imagen</p>}
+          <ul className="errors__list">
+            {errorEntries.map((errorEntry) => (
+              <li key={errorEntry} className="errors__item">
+                {errorEntry[0]}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 }

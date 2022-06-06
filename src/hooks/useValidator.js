@@ -15,7 +15,7 @@ export const useValidationForm = (formValuesObj, exceptions = []) => {
 
   const [formError, setFormError] = useState(initialState);
 
-  const handleformErrorChange = ({ target }) => {
+  const handleformErrorChange = () => {
     console.log(formError);
     const errorEntries = Object.entries(formError).filter((item) => item[1] === false);
     console.log({ errorEntries });
