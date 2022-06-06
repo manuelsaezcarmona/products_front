@@ -1,4 +1,4 @@
-// import { types } from '../actiontypes';
+import { types } from '../actiontypes';
 
 export const PRODUCTS_STATE = {
   PRODUCTS: 'products',
@@ -8,226 +8,39 @@ export const PRODUCTS_STATE = {
 };
 
 const initialState = {
-  [PRODUCTS_STATE.PRODUCTS]: [
-    {
-      productName: 'sinfonier',
-      description: 'Un sinfonier para el lado de la cama',
-      imageURL: 'https://eltallerdelmueble.es/wp-content/uploads/2016/08/d012b.jpg',
-      isFavourite: false,
-      price: 12.99,
-      section: 'habitaciones',
-      __v: 0,
-      id: '6298d56d8fa8f2eb4e7e24c3'
-    },
-    {
-      productName: 'mampara',
-      description: 'Mampara de ducha para el baño',
-      imageURL:
-        'https://www.decorabano.com/media/uploaded_images/mampara-frontal-1fijo-1corredera-bro-torvisco.jpg.1920x1920_q85_box-0%2C0%2C2366%2C2366_crop_detail.jpg',
-      isFavourite: true,
-      price: 64.99,
-      section: 'habitaciones',
-      __v: 0,
-      id: '6298d64f955b7b7648a8c40d'
-    },
-    {
-      productName: 'Mesa de comedor madera maciza de acacia',
-      description:
-        'Esta llamativa mesa de comedor tiene un estilo distintivo y natural y será un gran aporte para su comedor o cocina.',
-      imageURL:
-        'https://images.ssstatic.com/mesa-de-comedor-madera-maciza-de-acacia-180x90-cm-71251664z0-16471267.jpg',
-      isFavourite: true,
-      price: 104.99,
-      section: 'comedor',
-      __v: 0,
-      id: '6298d8cf955b7b7648a8c411'
-    },
-    {
-      productName: 'Mesa de baño en madera',
-      description: 'productos en madera para darle a tu baño un toque en estilo natural',
-      imageURL:
-        'https://assets.leroymerlin.es/is/image/lmes/15769985-0400/estanteria-2-estantes-lotus-madera-27x70.jpg?$lmesBgMobile$&fit=constrain,0',
-      isFavourite: false,
-      price: 85.99,
-      section: 'baño',
-      __v: 0,
-      id: '6298d964955b7b7648a8c413'
-    },
-    {
-      productName: 'jarron',
-      description: 'productos en madera para darle a tu baño un toque en estilo natural',
-      imageURL:
-        'https://assets.leroymerlin.es/is/image/lmes/15769985-0400/estanteria-2-estantes-lotus-madera-27x70.jpg?$lmesBgMobile$&fit=constrain,0',
-      isFavourite: false,
-      price: 15.99,
-      section: 'baño',
-      __v: 0,
-      id: '6298de51913731ca34285593'
-    },
-    {
-      productName: 'sinfonier',
-      description: 'Un sinfonier para el lado de la cama',
-      imageURL: 'https://eltallerdelmueble.es/wp-content/uploads/2016/08/d012b.jpg',
-      isFavourite: false,
-      price: 12.99,
-      section: 'habitaciones',
-      __v: 0,
-      id: '6298d56d8fa8f2eb4e7e24c3'
-    },
-    {
-      productName: 'mampara',
-      description: 'Mampara de ducha para el baño',
-      imageURL:
-        'https://www.decorabano.com/media/uploaded_images/mampara-frontal-1fijo-1corredera-bro-torvisco.jpg.1920x1920_q85_box-0%2C0%2C2366%2C2366_crop_detail.jpg',
-      isFavourite: true,
-      price: 64.99,
-      section: 'habitaciones',
-      __v: 0,
-      id: '6298d64f955b7b7648a8c40d'
-    },
-    {
-      productName: 'mampara A BORRAR',
-      description: 'Mampara de ducha para el baño',
-      imageURL:
-        'https://www.decorabano.com/media/uploaded_images/mampara-frontal-1fijo-1corredera-bro-torvisco.jpg.1920x1920_q85_box-0%2C0%2C2366%2C2366_crop_detail.jpg',
-      isFavourite: true,
-      price: 64.99,
-      section: 'habitaciones',
-      __v: 0,
-      id: '6298d674955b7b7648a8c40f'
-    },
-    {
-      productName: 'Mesa de comedor madera maciza de acacia',
-      description:
-        'Esta llamativa mesa de comedor tiene un estilo distintivo y natural y será un gran aporte para su comedor o cocina.',
-      imageURL:
-        'https://images.ssstatic.com/mesa-de-comedor-madera-maciza-de-acacia-180x90-cm-71251664z0-16471267.jpg',
-      isFavourite: true,
-      price: 104.99,
-      section: 'comedor',
-      __v: 0,
-      id: '6298d8cf955b7b7648a8c411'
-    }
-  ],
+  [PRODUCTS_STATE.PRODUCTS]: [],
   [PRODUCTS_STATE.PRODUCT_ADDED]: {
-    productName: 'sinfonier',
-    description: 'Un sinfonier para el lado de la cama',
-    imageURL: 'https://eltallerdelmueble.es/wp-content/uploads/2016/08/d012b.jpg',
+    productName: '',
+    description: '',
+    imageURL: '',
     isFavourite: false,
-    price: 12.99,
-    section: 'habitaciones',
-    __v: 0,
-    id: '6298d56d8fa8f2eb4e7e24c3'
+    price: 0,
+    section: ''
   },
-  [PRODUCTS_STATE.ALL_PRODUCTS]: [
-    {
-      productName: 'sinfonier',
-      description: 'Un sinfonier para el lado de la cama',
-      imageURL: 'https://eltallerdelmueble.es/wp-content/uploads/2016/08/d012b.jpg',
-      isFavourite: false,
-      price: 12.99,
-      section: 'habitaciones',
-      __v: 0,
-      id: '6298d56d8fa8f2eb4e7e24c3'
-    },
-    {
-      productName: 'mampara',
-      description: 'Mampara de ducha para el baño',
-      imageURL:
-        'https://www.decorabano.com/media/uploaded_images/mampara-frontal-1fijo-1corredera-bro-torvisco.jpg.1920x1920_q85_box-0%2C0%2C2366%2C2366_crop_detail.jpg',
-      isFavourite: true,
-      price: 64.99,
-      section: 'habitaciones',
-      __v: 0,
-      id: '6298d64f955b7b7648a8c40d'
-    },
-    {
-      productName: 'mampara A BORRAR',
-      description: 'Mampara de ducha para el baño',
-      imageURL:
-        'https://www.decorabano.com/media/uploaded_images/mampara-frontal-1fijo-1corredera-bro-torvisco.jpg.1920x1920_q85_box-0%2C0%2C2366%2C2366_crop_detail.jpg',
-      isFavourite: true,
-      price: 64.99,
-      section: 'habitaciones',
-      __v: 0,
-      id: '6298d674955b7b7648a8c40f'
-    },
-    {
-      productName: 'Mesa de comedor madera maciza de acacia',
-      description:
-        'Esta llamativa mesa de comedor tiene un estilo distintivo y natural y será un gran aporte para su comedor o cocina.',
-      imageURL:
-        'https://images.ssstatic.com/mesa-de-comedor-madera-maciza-de-acacia-180x90-cm-71251664z0-16471267.jpg',
-      isFavourite: true,
-      price: 104.99,
-      section: 'comedor',
-      __v: 0,
-      id: '6298d8cf955b7b7648a8c411'
-    },
-    {
-      productName: 'Mesa de baño en madera',
-      description: 'productos en madera para darle a tu baño un toque en estilo natural',
-      imageURL:
-        'https://assets.leroymerlin.es/is/image/lmes/15769985-0400/estanteria-2-estantes-lotus-madera-27x70.jpg?$lmesBgMobile$&fit=constrain,0',
-      isFavourite: false,
-      price: 85.99,
-      section: 'baño',
-      __v: 0,
-      id: '6298d964955b7b7648a8c413'
-    },
-    {
-      productName: 'jarron',
-      description: 'productos en madera para darle a tu baño un toque en estilo natural',
-      imageURL:
-        'https://assets.leroymerlin.es/is/image/lmes/15769985-0400/estanteria-2-estantes-lotus-madera-27x70.jpg?$lmesBgMobile$&fit=constrain,0',
-      isFavourite: false,
-      price: 15.99,
-      section: 'baño',
-      __v: 0,
-      id: '6298de51913731ca34285593'
-    },
-    {
-      productName: 'jarron',
-      description: 'productos en madera para darle a tu baño un toque en estilo natural',
-      imageURL:
-        'https://assets.leroymerlin.es/is/image/lmes/15769985-0400/estanteria-2-estantes-lotus-madera-27x70.jpg?$lmesBgMobile$&fit=constrain,0',
-      isFavourite: false,
-      price: 15.99,
-      section: 'baño',
-      __v: 0,
-      id: '6299a10982a73cce5c5cc243'
-    }
-  ],
-  [PRODUCTS_STATE.FILTERED_PRODUCTS]: [
-    {
-      productName: 'Mesa de comedor madera maciza de acacia',
-      description:
-        'Esta llamativa mesa de comedor tiene un estilo distintivo y natural y será un gran aporte para su comedor o cocina.',
-      imageURL:
-        'https://images.ssstatic.com/mesa-de-comedor-madera-maciza-de-acacia-180x90-cm-71251664z0-16471267.jpg',
-      isFavourite: true,
-      price: 104.99,
-      section: 'comedor',
-      __v: 0,
-      id: '6298d8cf955b7b7648a8c411'
-    },
-    {
-      productName: 'Mesa de baño en madera',
-      description: 'productos en madera para darle a tu baño un toque en estilo natural',
-      imageURL:
-        'https://assets.leroymerlin.es/is/image/lmes/15769985-0400/estanteria-2-estantes-lotus-madera-27x70.jpg?$lmesBgMobile$&fit=constrain,0',
-      isFavourite: false,
-      price: 85.99,
-      section: 'baño',
-      __v: 0,
-      id: '6298d964955b7b7648a8c413'
-    }
-  ]
+  [PRODUCTS_STATE.ALL_PRODUCTS]: [],
+  [PRODUCTS_STATE.FILTERED_PRODUCTS]: []
 };
 
 export const productsReducer = (state = initialState, action) => {
   switch (action.type) {
+    case types.productSetProducts:
+      return {
+        ...state,
+        [PRODUCTS_STATE.PRODUCTS]: action.payload
+      };
     default:
       return state;
   }
+};
+
+// eslint-disable-next-line no-unused-vars
+const productSampleData = {
+  productName: 'sinfonier',
+  description: 'Un sinfonier para el lado de la cama',
+  imageURL: 'https://eltallerdelmueble.es/wp-content/uploads/2016/08/d012b.jpg',
+  isFavourite: false,
+  price: 12.99,
+  section: 'habitaciones',
+  __v: 0,
+  id: '6298d56d8fa8f2eb4e7e24c3'
 };
