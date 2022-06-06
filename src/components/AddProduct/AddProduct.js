@@ -5,31 +5,42 @@ import { useForm } from '../../hooks/useForm';
 import CustomSelect from '../CustomSelect/CustomSelect';
 import pathimg from '../../assets/empty.jpg';
 import { useImgData } from '../../hooks/useImgData';
+import { useValidationForm } from '../../hooks/useValidator';
 
 export default function AddProduct() {
   const sections = Object.values(SECTIONS);
 
   const [formAddProductValues, handleProductValueInputChange] = useForm(ADD_PRODUCT_INITIAL_STATE);
-  const [favov, setFavor] = useState(false);
+  const [favourite, setFavourite] = useState(false);
 
   const fileSelectorRef = useRef();
 
-  const [imgFile, handleFileChange] = useImgData(null);
+  const [imgFile, handleFileChange] = useImgData(false);
+
+  // eslint-disable-next-line no-unused-vars
+  const [formError, handleformErrorChange] = useValidationForm({ ...ADD_PRODUCT_INITIAL_STATE }, [
+    'isFavourite'
+  ]);
+
+  const { productName, description, price, section } = formAddProductValues;
 
   const handleFavourite = () => {
-    setFavor(!favov);
+    setFavourite(!favourite);
   };
 
   const handleClickPicture = () => {
     fileSelectorRef.current.click();
   };
 
-  const { productName, description, price, section } = formAddProductValues;
+  const handleAddProductSubmit = (e) => {
+    e.preventDefault();
+    console.log(formError);
+  };
 
   return (
     <div className={styles.addProduct__container}>
       <h2 className={styles.addproduct_header}>Añadir Producto</h2>
-      <form id="addProduct" className={styles.addProduct}>
+      <form id="addProduct-form" className={styles.addProduct} onSubmit={handleAddProductSubmit}>
         <fieldset className={styles.addproduct_group}>
           <input
             type="text"
@@ -67,7 +78,7 @@ export default function AddProduct() {
         </fieldset>
         <fieldset className={styles.addproduct_group}>
           <div className="imgForm__container">
-            {imgFile === null ? (
+            {!imgFile ? (
               <img
                 className={styles.imgform__image}
                 src={pathimg}
@@ -79,7 +90,7 @@ export default function AddProduct() {
             )}
           </div>
           <input
-            form="addProduct"
+            form="addProduct-form"
             id="file-selector-toimage"
             ref={fileSelectorRef}
             className={styles['file-selector-toimage']}
@@ -89,7 +100,7 @@ export default function AddProduct() {
             onChange={handleFileChange}
           />
           <button
-            form="addpost-form"
+            form="addProduct-form"
             className="btn btn--accept"
             type="button"
             onClick={handleClickPicture}
@@ -100,6 +111,7 @@ export default function AddProduct() {
         <fieldset className={styles.addproduct_group}>
           <input
             type="number"
+            step=".01"
             name="price"
             className={`${styles.addproduct__text} inputtext`}
             required
@@ -112,10 +124,10 @@ export default function AddProduct() {
             Favorito:
             <input
               type="checkbox"
-              name="isFAvourite"
+              name="favourite"
               className="checkboxForm"
-              value={favov}
-              onClick={handleFavourite}
+              value={favourite}
+              onChange={handleFavourite}
             />
           </label>
         </fieldset>
@@ -123,7 +135,7 @@ export default function AddProduct() {
           <button className="btn btn--cancel" type="button">
             Cancelar
           </button>
-          <button form="addpost-form" className="btn btn--accept" type="submit">
+          <button form="addProduct-form" className="btn btn--accept" type="submit">
             Publicar
           </button>
         </div>
