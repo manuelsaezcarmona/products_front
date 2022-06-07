@@ -2,12 +2,12 @@ import { types } from '../actiontypes';
 
 export const UI_STATE = {
   CURRENT_PAGE: 'currentPage',
-  ELEMENTS_BY_PAGE: 'elementsByPage'
+  ELEMENTS_PER_PAGE: 'elementsByPage'
 };
 
 const initialState = {
   [UI_STATE.CURRENT_PAGE]: 1,
-  [UI_STATE.ELEMENTS_BY_PAGE]: 6
+  [UI_STATE.ELEMENTS_PER_PAGE]: 6
 };
 
 export const uiReducer = (state = initialState, action) => {
