@@ -1,15 +1,23 @@
+/* eslint-disable no-confusing-arrow */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable indent */
 /* eslint-disable react/jsx-indent */
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@ant-design/icons';
+import { useDispatch } from 'react-redux';
 import styles from './styles.module.scss';
 import { PRODUCTS_STATE } from '../../redux/reducers/product.reducer';
-import { selectProductsByKey } from '../../redux/selectors';
+import { selectProductsByKey, selectCurrentPage } from '../../redux/selectors';
 import { ELEMENTS_PER_PAGE } from '../../services/constants';
+import { setCurrentPage } from '../../redux/actions/ui.action';
 
 export default function Pagination() {
   const products = selectProductsByKey(PRODUCTS_STATE.PRODUCTS);
+  const currentPage = selectCurrentPage();
+
+  const dispatch = useDispatch();
 
   const getTotalPaginationElements = (items, elementsByPage) => {
     const fullPaginationElements = Math.floor(items.length / elementsByPage);
@@ -26,9 +34,17 @@ export default function Pagination() {
   );
   const paginationElements = Array.from(new Array(totalPaginationElements));
 
-  // const getElementClassName = (index, currentPage) => ((index === currentPage)
-  //   ? `${styles.pagination__item} ${styles.active}`
-  //   : styles.pagination__item);
+  const getElementClassName = (index, Page) =>
+    index === Page
+      ? `${styles.pagination__item} ${styles.active}`
+      : styles.pagination__item;
+
+  const handleCurrentPageChange = (e) => {
+    const page = parseInt(e.target.textContent, 10);
+    console.log(currentPage);
+    console.log(e.target.textContent);
+    dispatch(setCurrentPage(page));
+  };
 
   return (
     <div className={styles.pagination}>
@@ -38,7 +54,11 @@ export default function Pagination() {
       <ul id="pagination" className={styles.pagination__list}>
         {paginationElements.length !== 0
           ? paginationElements.map((_, index) => (
-              <li key={index} className={styles.pagination__item}>
+              <li
+                key={index}
+                className={getElementClassName(index + 1, currentPage)}
+                onClick={handleCurrentPageChange}
+              >
                 {`${index + 1}`}
               </li>
             ))

@@ -1,35 +1,24 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import {
-  selectProductsByCurrentPage,
-  selectUiByKey
-} from '../../../redux/selectors/index';
+import { selectProductsByCurrentPage } from '../../../redux/selectors/index';
 import { startGetAllProducts } from '../../../redux/actions/products.action';
-// import { PRODUCTS_STATE } from '../../../redux/reducers/product.reducer';
+
 import ProductCard from '../ProductCard/ProductCard';
 import styles from './styles.module.scss';
-// import { paginate } from '../../../helpers/paginate';
-import { UI_STATE } from '../../../redux/reducers/ui.reducer';
-// import { ELEMENTS_PER_PAGE } from '../../../services/constants';
 
 export default function ProductList() {
-  const productByPage = selectProductsByCurrentPage();
-  // const products = selectProductsByKey(PRODUCTS_STATE.PRODUCTS);
-  const currentPage = selectUiByKey(UI_STATE.CURRENT_PAGE);
+  const productsByPage = selectProductsByCurrentPage();
 
-  // const productByPage1 = paginate(products, ELEMENTS_PER_PAGE, currentPage);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(startGetAllProducts());
   }, []);
 
-  useEffect(() => {}, [currentPage]);
-
   return (
     <section className={styles.productlist__container}>
       <ul className={styles.productlist__list}>
-        {productByPage.map((product) => (
+        {productsByPage.map((product) => (
           <li key={`${product.id}-li`}>
             <ProductCard key={`${product.id}-pc`} product={product} />
           </li>

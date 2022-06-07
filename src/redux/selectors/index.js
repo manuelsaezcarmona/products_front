@@ -15,28 +15,22 @@ export const selectProductsByPage = (key, startPosition, endPosition) =>
     )
   );
 
-export const selectUiByKey = (key) =>
-  useSelector((state) => state?.ui[key] || '');
-
-//---------
-
-/* const selectCurrentPage = () =>
-  useSelector((state) => state?.settings?.currentPage || 1);
-
-export const selectProducts = () =>
-  useSelector((state) => state?.products?.products || []); */
+export const selectCurrentPage = () =>
+  useSelector((state) => state?.ui[UI_STATE.CURRENT_PAGE] || 1);
 
 export const selectProductsByCurrentPage = () => {
-  // eslint-disable-next-line no-unused-vars
-  const productsByCurrentPage = useSelector((state) => {
-    const products = selectProductsByKey(PRODUCTS_STATE.PRODUCTS);
-    const currentPage = selectUiByKey(UI_STATE.CURRENT_PAGE);
+  const products = selectProductsByKey(PRODUCTS_STATE.PRODUCTS);
+  const currentPage = selectCurrentPage(UI_STATE.CURRENT_PAGE);
+  // TODO crear un selector para el filter
 
-    const initialPageIndex = (currentPage - 1) * ELEMENTS_PER_PAGE;
-    const finalPageIndex = currentPage * ELEMENTS_PER_PAGE;
+  const initialPageIndex = (currentPage - 1) * ELEMENTS_PER_PAGE;
+  const finalPageIndex = currentPage * ELEMENTS_PER_PAGE;
 
-    return products.slice(initialPageIndex, finalPageIndex);
-  });
+  const productsByCurrentPage = products.slice(
+    initialPageIndex,
+    finalPageIndex
+  );
+  // return products filter
 
   return productsByCurrentPage;
 };
