@@ -14,3 +14,8 @@ export const nextPage = (page) => {
   const incrementedPage = page + 1;
   return { type: types.uiIncrementedPage, payload: incrementedPage };
 };
+
+export const setFilter = (filter) => ({
+  type: types.uiSetFilter,
+  payload: filter
+});
