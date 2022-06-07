@@ -10,15 +10,13 @@ import ProductCard from '../ProductCard/ProductCard';
 import styles from './styles.module.scss';
 import { paginate } from '../../../helpers/paginate';
 import { UI_STATE } from '../../../redux/reducers/ui.reducer';
+import { ELEMENTS_PER_PAGE } from '../../../services/constants';
 
 export default function ProductList() {
   const products = selectProductsByKey(PRODUCTS_STATE.PRODUCTS);
   const currentPage = selectUiByKey(UI_STATE.CURRENT_PAGE);
-  const itemsPerPage = selectUiByKey(UI_STATE.ELEMENTS_PER_PAGE);
 
-  console.log(itemsPerPage);
-
-  const productByPage = paginate(products, itemsPerPage, currentPage);
+  const productByPage = paginate(products, ELEMENTS_PER_PAGE, currentPage);
   const dispatch = useDispatch();
 
   useEffect(() => {

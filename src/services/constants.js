@@ -23,4 +23,6 @@ export const ADD_PRODUCT_INITIAL_STATE = {
   section: ''
 };
 
+export const ELEMENTS_PER_PAGE = 6;
+
 export const UPLOADPRESET = 'flat101';

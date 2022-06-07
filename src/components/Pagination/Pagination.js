@@ -1,10 +1,12 @@
+/* eslint-disable indent */
+/* eslint-disable react/jsx-indent */
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@ant-design/icons';
 import styles from './styles.module.scss';
 import { PRODUCTS_STATE } from '../../redux/reducers/product.reducer';
 import { selectProductsByKey } from '../../redux/selectors';
-import { PRODUCTS_BY_PAGE } from '../../contants';
+import { ELEMENTS_PER_PAGE } from '../../services/constants';
 
 export default function Pagination() {
   const products = selectProductsByKey(PRODUCTS_STATE.PRODUCTS);
@@ -13,12 +15,15 @@ export default function Pagination() {
     const fullPaginationElements = Math.floor(items.length / elementsByPage);
     const remainingPaginationElements = items.length % elementsByPage;
 
-    return (remainingPaginationElements)
+    return remainingPaginationElements
       ? fullPaginationElements + 1
       : fullPaginationElements;
   };
 
-  const totalPaginationElements = getTotalPaginationElements(products, PRODUCTS_BY_PAGE);
+  const totalPaginationElements = getTotalPaginationElements(
+    products,
+    ELEMENTS_PER_PAGE
+  );
   const paginationElements = Array.from(new Array(totalPaginationElements));
 
   // const getElementClassName = (index, currentPage) => ((index === currentPage)
@@ -33,13 +38,10 @@ export default function Pagination() {
       <ul id="pagination" className={styles.pagination__list}>
         {paginationElements.length !== 0
           ? paginationElements.map((_, index) => (
-            <li
-              key={index}
-              className={styles.pagination__item}
-            >
-              {`${index + 1}`}
-            </li>
-          ))
+              <li key={index} className={styles.pagination__item}>
+                {`${index + 1}`}
+              </li>
+            ))
           : null}
       </ul>
       <button type="button" className={styles.pagination__button}>
