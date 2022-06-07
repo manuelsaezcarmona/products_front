@@ -41,14 +41,24 @@ export default function Pagination() {
 
   const handleCurrentPageChange = (e) => {
     const page = parseInt(e.target.textContent, 10);
-    console.log(currentPage);
-    console.log(e.target.textContent);
     dispatch(setCurrentPage(page));
+  };
+
+  const handlePreviousClick = () => {
+    console.log('pagina anterior');
+  };
+
+  const handleNextClick = () => {
+    console.log('pagina siguiente');
   };
 
   return (
     <div className={styles.pagination}>
-      <button type="button" className={styles.pagination__button}>
+      <button
+        type="button"
+        className={styles.pagination__button}
+        onClick={handlePreviousClick}
+      >
         <ArrowLeftOutlined className={styles.pagination__icon} />
       </button>
       <ul id="pagination" className={styles.pagination__list}>
@@ -64,7 +74,11 @@ export default function Pagination() {
             ))
           : null}
       </ul>
-      <button type="button" className={styles.pagination__button}>
+      <button
+        type="button"
+        className={styles.pagination__button}
+        onClick={handleNextClick}
+      >
         <ArrowRightOutlined className={styles.pagination__icon} />
       </button>
     </div>
