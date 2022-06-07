@@ -13,7 +13,6 @@ export default function FilterBar() {
   const dispatch = useDispatch();
 
   const handleSetFilter = (e) => {
-    console.log(e.target.value);
     dispatch(setFilter(e.target.value));
   };
 
