@@ -8,8 +8,12 @@ import React from 'react';
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@ant-design/icons';
 import { useDispatch } from 'react-redux';
 import styles from './styles.module.scss';
-import { PRODUCTS_STATE } from '../../redux/reducers/product.reducer';
-import { selectProductsByKey, selectCurrentPage } from '../../redux/selectors';
+
+import {
+  selectCurrentFilter,
+  selectCurrentPage,
+  selectProductsByFilter
+} from '../../redux/selectors';
 import { ELEMENTS_PER_PAGE, MINIMUM_PAGE } from '../../services/constants';
 import {
   nextPage,
@@ -18,7 +22,9 @@ import {
 } from '../../redux/actions/ui.action';
 
 export default function Pagination() {
-  const products = selectProductsByKey(PRODUCTS_STATE.PRODUCTS);
+  // Si le pones un string con el filtro funciona
+  const filterValue = selectCurrentFilter();
+  const products = selectProductsByFilter(filterValue);
   const currentPage = selectCurrentPage();
 
   const dispatch = useDispatch();

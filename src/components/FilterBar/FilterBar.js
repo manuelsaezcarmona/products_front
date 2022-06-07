@@ -3,10 +3,9 @@ import { useDispatch } from 'react-redux';
 import styles from './styles.module.scss';
 import { SECTIONS, SORT_OPTIONS } from '../../services/constants';
 import CustomSelect from '../CustomSelect/CustomSelect';
-import { setFilter } from '../../redux/actions/ui.action';
+import { setCurrentPage, setFilter } from '../../redux/actions/ui.action';
 
 export default function FilterBar() {
-  // en los selects el evento es onchange
   const sections = Object.values(SECTIONS);
   const sorts = Object.values(SORT_OPTIONS);
 
@@ -14,6 +13,7 @@ export default function FilterBar() {
 
   const handleSetFilter = (e) => {
     dispatch(setFilter(e.target.value));
+    dispatch(setCurrentPage(1));
   };
 
   return (
