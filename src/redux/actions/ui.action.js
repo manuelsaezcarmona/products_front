@@ -31,3 +31,7 @@ export const setOrder = (orderValue) => {
     payload: orderObject[0]
   };
 };
+
+export const resetFilter = () => ({ type: types.uiResetFilter });
+
+export const resetOrder = () => ({ type: types.uiResetOrder });
