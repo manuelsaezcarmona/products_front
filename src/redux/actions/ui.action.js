@@ -19,3 +19,8 @@ export const setFilter = (filter) => ({
   type: types.uiSetFilter,
   payload: filter
 });
+
+export const setOrder = (order) => ({
+  type: types.uiSetOrder,
+  payload: order
+});
