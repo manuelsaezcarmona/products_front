@@ -158,18 +158,18 @@ export default function AddProduct() {
           </label>
         </fieldset>
         {errorEntries.length !== 0 && (
-          <div className="errors">
-            <p className="errors__title">
+          <div className={styles.errors}>
+            <p className={styles.errors__title}>
               Error de validacion para los siguientes campos:{' '}
             </p>
             {imgFile === false && (
-              <p className="errors__item">
+              <p className={styles.errors__item}>
                 Solo se puede añadir un producto con una imagen
               </p>
             )}
-            <ul className="errors__list">
+            <ul className={styles.errors__list}>
               {errorEntries.map((errorEntry) => (
-                <li key={errorEntry} className="errors__item">
+                <li key={errorEntry} className={styles.errors__item}>
                   {errorEntry[0]}
                 </li>
               ))}
