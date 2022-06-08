@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from './styles.module.scss';
 import { SECTIONS, ADD_PRODUCT_INITIAL_STATE } from '../../services/constants';
 import { useForm } from '../../hooks/useForm';
@@ -8,6 +9,9 @@ import { useImgData } from '../../hooks/useImgData';
 
 export default function AddProduct() {
   const sections = Object.values(SECTIONS);
+
+  // eslint-disable-next-line no-unused-vars
+  const navigate = useNavigate();
 
   const [formAddProductValues, handleProductValueInputChange] = useForm(
     ADD_PRODUCT_INITIAL_STATE
@@ -30,7 +34,7 @@ export default function AddProduct() {
   const errorEntries = Object.entries(formError).filter(
     (item) => item[1] === true
   );
-
+  console.log({ errorEntries });
   const handleFavourite = () => {
     setFavourite(!favourite);
   };
@@ -55,7 +59,24 @@ export default function AddProduct() {
     const objFields = Object.fromEntries(formFields);
 
     setFormError(objFields);
-    console.log(formError);
+
+    if (errorEntries.length === 0) {
+      console.log('amtes del imgFile');
+      if (imgFile !== false) {
+        const product = {
+          productName,
+          description,
+          isFavourite: favourite,
+          price,
+          section,
+          imgFile
+        };
+
+        console.log({ product });
+        // dispatch(startAddProduct(imgFile, product));
+        // navigate('/');
+      }
+    }
   };
 
   return (

@@ -14,6 +14,11 @@ export const setSearchResults = (results, searchTerm) => ({
   }
 });
 
+export const addProduct = (product) => ({
+  type: types.productAddProduct,
+  payload: product
+});
+
 export const startGetAllProducts = () => async (dispatch) => {
   try {
     const result = await getAllProducts();
