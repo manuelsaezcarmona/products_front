@@ -9,5 +9,7 @@ export const types = {
   uiSetFilter: '@UI/SetFilter',
   uiSetOrder: '@UI/SetOrder',
   uiResetFilter: '@UI/ResetFilter',
-  uiResetOrder: '@Ui/ResetOrder'
+  uiResetOrder: '@Ui/ResetOrder',
+  uiShowResults: '@ui/ShowResults',
+  uiHiddenResults: '@ui/HiddenResults'
 };
