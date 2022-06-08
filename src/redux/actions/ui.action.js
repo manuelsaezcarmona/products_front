@@ -1,3 +1,4 @@
+import { SORT_OPTIONS } from '../../services/constants';
 import { types } from '../actiontypes';
 
 export const setCurrentPage = (page) => ({
@@ -20,7 +21,17 @@ export const setFilter = (filter) => ({
   payload: filter
 });
 
-export const setOrder = (order) => ({
-  type: types.uiSetOrder,
-  payload: order
-});
+export const setOrder = (orderValue) => {
+  console.log(orderValue);
+  console.log(SORT_OPTIONS);
+  const orderObject = Object.entries(SORT_OPTIONS).find(
+    (option) => option[1] === orderValue
+  );
+
+  console.log(orderObject);
+
+  return {
+    type: types.uiSetOrder,
+    payload: orderObject[0]
+  };
+};

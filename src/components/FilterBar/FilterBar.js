@@ -3,7 +3,11 @@ import { useDispatch } from 'react-redux';
 import styles from './styles.module.scss';
 import { SECTIONS, SORT_OPTIONS } from '../../services/constants';
 import CustomSelect from '../CustomSelect/CustomSelect';
-import { setCurrentPage, setFilter } from '../../redux/actions/ui.action';
+import {
+  setCurrentPage,
+  setFilter,
+  setOrder
+} from '../../redux/actions/ui.action';
 
 export default function FilterBar() {
   const sections = Object.values(SECTIONS);
@@ -13,6 +17,11 @@ export default function FilterBar() {
 
   const handleSetFilter = (e) => {
     dispatch(setFilter(e.target.value));
+    dispatch(setCurrentPage(1));
+  };
+
+  const handleSetOrder = (e) => {
+    dispatch(setOrder(e.target.value));
     dispatch(setCurrentPage(1));
   };
 
@@ -40,6 +49,7 @@ export default function FilterBar() {
             classOption: styles.filterbar__option,
             optionValues: sorts
           }}
+          handleChange={handleSetOrder}
         />
       </form>
     </div>
