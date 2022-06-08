@@ -1,6 +1,6 @@
 export const types = {
   productSetProducts: '@product/Set',
-  productSetFiltered: '@product/SetFiltered',
+  productSetSearchResults: '@product/SetSearchResults',
   productSetProductAdded: '@product/SetAdded',
 
   uiSetCurrentPage: '@UI/SetCurrentPage',

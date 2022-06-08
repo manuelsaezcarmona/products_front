@@ -3,8 +3,7 @@ import { types } from '../actiontypes';
 export const PRODUCTS_STATE = {
   PRODUCTS: 'products',
   PRODUCT_ADDED: 'productAdded',
-  ALL_PRODUCTS: 'allProducts',
-  FILTERED_PRODUCTS: 'filteredProducts'
+  SEARCH_RESULTS: 'searchResults'
 };
 
 const initialState = {
@@ -17,8 +16,10 @@ const initialState = {
     price: 0,
     section: ''
   },
-  [PRODUCTS_STATE.ALL_PRODUCTS]: [],
-  [PRODUCTS_STATE.FILTERED_PRODUCTS]: []
+  [PRODUCTS_STATE.SEARCH_RESULTS]: {
+    itemsCount: 0,
+    searchTerm: ''
+  }
 };
 
 export const productsReducer = (state = initialState, action) => {
@@ -27,6 +28,12 @@ export const productsReducer = (state = initialState, action) => {
       return {
         ...state,
         [PRODUCTS_STATE.PRODUCTS]: action.payload
+      };
+
+    case types.productSetSearchResults:
+      return {
+        ...state,
+        [PRODUCTS_STATE.SEARCH_RESULTS]: action.payload
       };
     default:
       return state;

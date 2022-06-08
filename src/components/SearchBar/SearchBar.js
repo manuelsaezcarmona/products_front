@@ -23,9 +23,6 @@ export default function SearchBar() {
       setVisible(false);
     }
     if (search) {
-      console.log(search);
-      console.log(`lanza la busqueda con ${search}`);
-
       dispatch(resetFilter());
       dispatch(resetOrder());
       dispatch(startSearchProducts(search));

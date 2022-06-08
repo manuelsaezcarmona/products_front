@@ -6,6 +6,14 @@ const setProducts = (products) => ({
   payload: products
 });
 
+export const setSearchResults = (results, searchTerm) => ({
+  type: types.productSetSearchResults,
+  payload: {
+    itemsCount: results.length,
+    searchTerm
+  }
+});
+
 export const startGetAllProducts = () => async (dispatch) => {
   try {
     const result = await getAllProducts();
@@ -26,6 +34,7 @@ export const startSearchProducts = (term) => async (dispatch) => {
     }
 
     dispatch(setProducts(resp.result));
+    dispatch(setSearchResults(resp.result, term));
   } catch (error) {
     return error.message;
   }
