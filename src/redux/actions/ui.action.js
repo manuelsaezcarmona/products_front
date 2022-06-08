@@ -22,13 +22,9 @@ export const setFilter = (filter) => ({
 });
 
 export const setOrder = (orderValue) => {
-  console.log(orderValue);
-  console.log(SORT_OPTIONS);
   const orderObject = Object.entries(SORT_OPTIONS).find(
     (option) => option[1] === orderValue
   );
-
-  console.log(orderObject);
 
   return {
     type: types.uiSetOrder,
