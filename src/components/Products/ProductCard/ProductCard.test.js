@@ -1,8 +1,8 @@
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
-import configureStore from '../../redux/store';
-import Header from './Header';
+import configureStore from '../../../redux/store';
+import ProductCard from './ProductCard';
 
 const initialState = {
   products: {
@@ -28,13 +28,19 @@ const initialState = {
   }
 };
 const store = configureStore(initialState);
+const product = {
+  productName: 'Card Product',
+  imageURL: 'http://algunaimagen.jpg',
+  price: 99,
+  isFavourite: false
+};
 
-describe('Given the Header Component', () => {
+describe('Given the ProductCard Component', () => {
   beforeEach(() => {
     render(
       <Provider store={store}>
         <BrowserRouter>
-          <Header />
+          <ProductCard product={product} />
         </BrowserRouter>
       </Provider>
     );
@@ -43,10 +49,10 @@ describe('Given the Header Component', () => {
     const { asFragment } = render(
       <Provider store={store}>
         <BrowserRouter>
-          <Header />
+          <ProductCard product={product} />
         </BrowserRouter>
       </Provider>
     );
-    expect(asFragment(<Header />)).toMatchSnapshot();
+    expect(asFragment(<ProductCard />)).toMatchSnapshot();
   });
 });
