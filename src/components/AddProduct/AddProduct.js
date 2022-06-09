@@ -28,7 +28,8 @@ export default function AddProduct() {
     productName: false,
     description: false,
     price: false,
-    section: false
+    section: false,
+    imgFile: false
   });
   // eslint-disable-next-line no-unused-vars
   const errorEntries = Object.entries(formError).filter(
@@ -46,7 +47,7 @@ export default function AddProduct() {
   const handleAddProductSubmit = (e) => {
     e.preventDefault();
     // Validacion de los elementos.
-    const formFields = Object.entries(formAddProductValues);
+    const formFields = Object.entries({ ...formAddProductValues, imgFile });
     formFields.forEach((field) => {
       if (!field[1]) {
         // eslint-disable-next-line no-param-reassign
