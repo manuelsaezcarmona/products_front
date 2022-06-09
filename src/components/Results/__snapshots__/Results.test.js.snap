@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given the Header Component The component is rendered (take a snapshot) 1`] = `<DocumentFragment />`;
