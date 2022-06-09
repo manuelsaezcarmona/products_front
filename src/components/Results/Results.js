@@ -38,6 +38,7 @@ export default function Results() {
 
         <CloseOutlined
           className={styles.results__closeIcon}
+          name="close"
           onClick={handleCloseClick}
         />
       </div>
