@@ -76,7 +76,7 @@ export default function AddProduct() {
 
         dispatch(startAddProduct(imgFile, product));
         reset();
-        navigate('/');
+        // navigate('/');
       }
     }
   };
