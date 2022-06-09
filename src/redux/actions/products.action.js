@@ -28,9 +28,12 @@ export const startAddProduct = (imgFile, product) => async (dispatch) => {
   try {
     const imageURL = await uploadFileToCloud(imgFile);
     const productToAdd = { ...product, imageURL };
+
     const resp = await addProduct(productToAdd);
+
     if (resp.ok) {
       const { newProduct } = resp;
+
       dispatch(addProductAction(newProduct));
     }
     return resp;

@@ -38,11 +38,9 @@ export const productsReducer = (state = initialState, action) => {
     case types.productAddProduct:
       return {
         ...state,
-        [PRODUCTS_STATE.PRODUCTS]: [
-          ...state.PRODUCTS_STATE.PRODUCTS,
-          action.payload
-        ]
+        [PRODUCTS_STATE.PRODUCTS]: [...state.products, action.payload]
       };
+
     default:
       return state;
   }

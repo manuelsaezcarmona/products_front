@@ -65,7 +65,6 @@ export default function AddProduct() {
     setFormError(objFields);
 
     if (errorEntries.length === 0) {
-      console.log('amtes del imgFile');
       if (imgFile !== false) {
         const product = {
           productName,
@@ -75,12 +74,9 @@ export default function AddProduct() {
           section
         };
 
-        console.log({ product });
-
         dispatch(startAddProduct(imgFile, product));
-        // dispatch(startAddProduct(imgFile, product));
-        // navigate('/');
         reset();
+        // navigate('/');
       }
     }
   };
