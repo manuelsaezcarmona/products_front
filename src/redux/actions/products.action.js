@@ -1,4 +1,9 @@
-import { getAllProducts, searchProductsByTitleTerm } from '../../services/api';
+import { uploadFileToCloud } from '../../helpers/uploadFile';
+import {
+  addProduct,
+  getAllProducts,
+  searchProductsByTitleTerm
+} from '../../services/api';
 import { types } from '../actiontypes';
 
 const setProducts = (products) => ({
@@ -14,10 +19,25 @@ export const setSearchResults = (results, searchTerm) => ({
   }
 });
 
-export const addProduct = (product) => ({
+export const addProductAction = (product) => ({
   type: types.productAddProduct,
   payload: product
 });
+
+export const startAddProduct = (imgFile, product) => async (dispatch) => {
+  try {
+    const imageURL = await uploadFileToCloud(imgFile);
+    const productToAdd = { ...product, imageURL };
+    const resp = await addProduct(productToAdd);
+    if (resp.ok) {
+      const { newProduct } = resp;
+      dispatch(addProductAction(newProduct));
+    }
+    return resp;
+  } catch (error) {
+    return error;
+  }
+};
 
 export const startGetAllProducts = () => async (dispatch) => {
   try {

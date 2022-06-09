@@ -15,7 +15,9 @@ export const searchProductsByTitleTerm = async (term) => {
   const resourcePath = 'api/products';
   const queryParam = 'search?term';
   try {
-    const resp = await fetch(`${baseURL}/${resourcePath}/${queryParam}=${term}`);
+    const resp = await fetch(
+      `${baseURL}/${resourcePath}/${queryParam}=${term}`
+    );
     const data = await resp.json();
     return data;
   } catch (error) {
@@ -23,16 +25,7 @@ export const searchProductsByTitleTerm = async (term) => {
   }
 };
 
-export const addProduct = async (
-  productName,
-  description,
-  imageURL,
-  isFavourite,
-  price,
-  section
-) => {
-  const product = { productName, description, imageURL, isFavourite, price, section };
-
+export const addProduct = async (product) => {
   // localhost:8000/api/products/  -POST
   const baseURL = process.env.REACT_APP_API_URL;
   const resourcePath = 'api/products';
