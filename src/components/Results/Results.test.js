@@ -1,14 +1,9 @@
-import { fireEvent, render, screen } from '@testing-library/react';
-import { Provider, useSelector } from 'react-redux';
+import { render, screen } from '@testing-library/react';
+import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import { BrowserRouter } from 'react-router-dom';
 import configureStore from 'redux-mock-store';
 import userEvent from '@testing-library/user-event';
-import {
-  selectResultsSearch,
-  selectVisibilityResults
-} from '../../redux/selectors';
-import { startGetAllProducts } from '../../redux/actions/products.action';
 import { hiddenResults } from '../../redux/actions/ui.action';
 import Results from './Results';
 
@@ -46,22 +41,6 @@ store.dispatch = jest.fn();
 jest.mock('../../redux/actions/ui.action', () => ({
   hiddenResults: jest.fn()
 }));
-
-/* jest.mock('react-redux', () => ({
-  useSelector: jest.fn().mockImplementation((selector) => selector())
-})); */
-
-/* jest.mock('../../redux/selectors', () => ({
-  selectResultsSearch: jest.fn().mockReturnValue({
-    itemsCount: 3,
-    searchTerm: 'algo'
-  }),
-  selectVisibilityResults: jest.fn().mockReturnValue({
-    ui: {
-      resultsVisible: true
-    }
-  })
-})); */
 
 describe('Given the Header Component', () => {
   beforeEach(() => {
