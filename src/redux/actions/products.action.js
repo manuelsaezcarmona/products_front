@@ -6,7 +6,7 @@ import {
 } from '../../services/api';
 import { types } from '../actiontypes';
 
-const setProducts = (products) => ({
+export const setProducts = (products) => ({
   type: types.productSetProducts,
   payload: products
 });
