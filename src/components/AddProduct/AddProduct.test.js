@@ -1,9 +1,10 @@
-import { render, screen } from '@testing-library/react';
+import { render, renderHook, screen } from '@testing-library/react';
 import { Provider, useDispatch } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import thunk from 'redux-thunk';
 import configureStore from 'redux-mock-store';
 import userEvent from '@testing-library/user-event';
+import { useForm } from '../../hooks/useForm';
 import AddProduct from './AddProduct';
 
 const middlewares = [thunk];
@@ -35,6 +36,13 @@ const initialState = {
 
 const store = mockStore(initialState);
 
+let imgFile = false;
+
+jest.mock('../../hooks/useImgData', () => ({
+  ...jest.requireActual('../../hooks/useImgData'),
+  handleFileChange: jest.fn().mockReturnValueOnce('algo')
+}));
+
 describe('Given the AddProduct Component', () => {
   beforeEach(() => {
     render(
@@ -44,6 +52,7 @@ describe('Given the AddProduct Component', () => {
         </BrowserRouter>
       </Provider>
     );
+    jest.clearAllMocks();
   });
   test('then must be rendered (take a snapshot)', () => {
     const { asFragment } = render(
@@ -60,5 +69,20 @@ describe('Given the AddProduct Component', () => {
 
     userEvent.click(favouriteCheck);
     expect(favouriteCheck.value).toBe('true');
+  });
+  test('when the press button   then fill the data-image', () => {
+    const selectImageButton = screen.getByText(/Elegir Imagen/i);
+    const selectImg = screen.getAllByRole('img');
+
+    userEvent.click(selectImageButton);
+    imgFile = 'algo';
+    expect(selectImg).toBeTruthy();
+  });
+  test('when submit button', () => {
+    const submitButton = screen.getByText(/Publicar/i);
+    userEvent.click(submitButton);
+    expect(
+      screen.getByText(/Error de validacion para los siguientes campos:/i)
+    ).toBeInTheDocument();
   });
 });
