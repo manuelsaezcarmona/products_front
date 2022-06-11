@@ -1,11 +1,5 @@
 import { types } from '../actiontypes';
-import { productsReducer } from './product.reducer';
-
-const PRODUCTS_STATE = {
-  PRODUCTS: 'products',
-  PRODUCT_ADDED: 'productAdded',
-  SEARCH_RESULTS: 'searchResults'
-};
+import { productsReducer, PRODUCTS_STATE } from './product.reducer';
 
 const initialState = {
   [PRODUCTS_STATE.PRODUCTS]: [],
