@@ -47,7 +47,9 @@ export const selectVisibilityResults = () =>
 export const selectProductsByCurrentPage = () => {
   let products = selectProductsByKey(PRODUCTS_STATE.PRODUCTS);
   const currentPage = selectCurrentPage();
+
   const filterValue = selectCurrentFilter();
+
   const order = selectCurrentOrder();
 
   if (filterValue) {

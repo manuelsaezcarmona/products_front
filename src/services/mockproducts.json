@@ -1,0 +1,869 @@
+{
+  "ok": true,
+  "products": [
+    {
+      "productName": "sinfonier",
+      "description": "Un sinfonier para el lado de la cama",
+      "imageURL": "https://eltallerdelmueble.es/wp-content/uploads/2016/08/d012b.jpg",
+      "isFavourite": false,
+      "price": 12.99,
+      "section": "habitaciones",
+      "__v": 0,
+      "id": "6298d56d8fa8f2eb4e7e24c3"
+    },
+    {
+      "productName": "Mesa de comedor madera maciza de acacia",
+      "description": "Esta llamativa mesa de comedor tiene un estilo distintivo y natural y será un gran aporte para su comedor o cocina.",
+      "imageURL": "https://images.ssstatic.com/mesa-de-comedor-madera-maciza-de-acacia-180x90-cm-71251664z0-16471267.jpg",
+      "isFavourite": true,
+      "price": 104.99,
+      "section": "comedor",
+      "__v": 0,
+      "id": "6298d8cf955b7b7648a8c411"
+    },
+    {
+      "productName": "Mesa de baño en madera",
+      "description": "productos en madera para darle a tu baño un toque en estilo natural",
+      "imageURL": "https://assets.leroymerlin.es/is/image/lmes/15769985-0400/estanteria-2-estantes-lotus-madera-27x70.jpg?$lmesBgMobile$&fit=constrain,0",
+      "isFavourite": false,
+      "price": 85.99,
+      "section": "baño",
+      "__v": 0,
+      "id": "6298d964955b7b7648a8c413"
+    },
+    {
+      "productName": "jarron",
+      "description": "productos en madera para darle a tu baño un toque en estilo natural",
+      "imageURL": "https://assets.leroymerlin.es/is/image/lmes/15769985-0400/estanteria-2-estantes-lotus-madera-27x70.jpg?$lmesBgMobile$&fit=constrain,0",
+      "isFavourite": false,
+      "price": 15.99,
+      "section": "baño",
+      "__v": 0,
+      "id": "6298de51913731ca34285593"
+    },
+    {
+      "productName": "jarron",
+      "description": "productos en madera para darle a tu baño un toque en estilo natural",
+      "imageURL": "https://assets.leroymerlin.es/is/image/lmes/15769985-0400/estanteria-2-estantes-lotus-madera-27x70.jpg?$lmesBgMobile$&fit=constrain,0",
+      "isFavourite": false,
+      "price": 15.99,
+      "section": "baño",
+      "__v": 0,
+      "id": "6299a10982a73cce5c5cc243"
+    },
+    {
+      "productName": "Baño 01 Set",
+      "description": "Set 01 de Baño ",
+      "imageURL": "https://www.codisbath.com/wp-content/uploads/2021/02/mugarri-entrevista-codis-27.jpg",
+      "isFavourite": false,
+      "price": 500,
+      "section": "baño",
+      "id": "629e1301e655592b12cbb424"
+    },
+    {
+      "productName": "Baño 02 Set",
+      "description": "Set 02 de Baño ",
+      "imageURL": "https://www.codisbath.com/wp-content/uploads/2021/02/mugarri-entrevista-codis-27.jpg",
+      "isFavourite": true,
+      "price": 499.9,
+      "section": "baño",
+      "id": "629e1332e655592b12cc0133"
+    },
+    {
+      "productName": "Baño 03 Set",
+      "description": "Set 03 de Baño ",
+      "imageURL": "https://www.codisbath.com/wp-content/uploads/2021/02/mugarri-entrevista-codis-27.jpg",
+      "isFavourite": false,
+      "price": 1499.9,
+      "section": "baño",
+      "id": "629e1354e655592b12cc3de6"
+    },
+    {
+      "productName": "Baño 04 Set",
+      "description": "Set 04 de Baño ",
+      "imageURL": "https://www.codisbath.com/wp-content/uploads/2021/02/mugarri-entrevista-codis-27.jpg",
+      "isFavourite": true,
+      "price": 259.9,
+      "section": "baño",
+      "id": "629e1374e655592b12cc6fc9"
+    },
+    {
+      "productName": "Baño 05 Set",
+      "description": "Set 05 de Baño ",
+      "imageURL": "https://www.codisbath.com/wp-content/uploads/2021/02/mugarri-entrevista-codis-27.jpg",
+      "isFavourite": false,
+      "price": 1499.9,
+      "section": "baño",
+      "id": "629e139ce655592b12ccb05f"
+    },
+    {
+      "productName": "Baño 06 Set",
+      "description": "Set 06 de Baño ",
+      "imageURL": "https://www.codisbath.com/wp-content/uploads/2021/02/mugarri-entrevista-codis-27.jpg",
+      "isFavourite": true,
+      "price": 2499.9,
+      "section": "baño",
+      "id": "629e13bbe655592b12cce2a1"
+    },
+    {
+      "productName": "Baño 07 Set",
+      "description": "Set 07 de Baño ",
+      "imageURL": "https://www.codisbath.com/wp-content/uploads/2021/02/mugarri-entrevista-codis-27.jpg",
+      "isFavourite": true,
+      "price": 999.9,
+      "section": "baño",
+      "id": "629e13d3e655592b12cd099d"
+    },
+    {
+      "productName": "kit 01 Dormilón",
+      "description": "01 Kit de Dormitorio ",
+      "imageURL": "https://dismobel.es/44535-large_default/dormitorio-boho-20-de-lan-mobel.jpg",
+      "isFavourite": true,
+      "price": 99.9,
+      "section": "dormitorio",
+      "id": "629e1531e655592b12cf5362"
+    },
+    {
+      "productName": "kit 02 Dormilón",
+      "description": "02 Kit de Dormitorio ",
+      "imageURL": "https://dismobel.es/44535-large_default/dormitorio-boho-20-de-lan-mobel.jpg",
+      "isFavourite": false,
+      "price": 299.9,
+      "section": "dormitorio",
+      "id": "629e1531e655592b12cf5363"
+    },
+    {
+      "productName": "kit 03 Dormilón",
+      "description": "03 Kit de Dormitorio ",
+      "imageURL": "https://dismobel.es/44535-large_default/dormitorio-boho-20-de-lan-mobel.jpg",
+      "isFavourite": false,
+      "price": 4999.9,
+      "section": "dormitorio",
+      "id": "629e1531e655592b12cf5364"
+    },
+    {
+      "productName": "kit 04 Dormilón",
+      "description": "04 Kit de Dormitorio ",
+      "imageURL": "https://dismobel.es/44535-large_default/dormitorio-boho-20-de-lan-mobel.jpg",
+      "isFavourite": false,
+      "price": 599.9,
+      "section": "dormitorio",
+      "id": "629e1531e655592b12cf5365"
+    },
+    {
+      "productName": "kit 05 Dormilón",
+      "description": "05 Kit de Dormitorio ",
+      "imageURL": "https://dismobel.es/44535-large_default/dormitorio-boho-20-de-lan-mobel.jpg",
+      "isFavourite": false,
+      "price": 2999.9,
+      "section": "dormitorio",
+      "id": "629e1531e655592b12cf5366"
+    },
+    {
+      "productName": "kit 06 Dormilón",
+      "description": "06 Kit de Dormitorio ",
+      "imageURL": "https://dismobel.es/44535-large_default/dormitorio-boho-20-de-lan-mobel.jpg",
+      "isFavourite": true,
+      "price": 399.9,
+      "section": "dormitorio",
+      "id": "629e1531e655592b12cf5367"
+    },
+    {
+      "productName": "kit 07 Dormilón",
+      "description": "08 Kit de Dormitorio ",
+      "imageURL": "https://dismobel.es/44535-large_default/dormitorio-boho-20-de-lan-mobel.jpg",
+      "isFavourite": false,
+      "price": 799.9,
+      "section": "dormitorio",
+      "id": "629e1531e655592b12cf5368"
+    },
+    {
+      "productName": "kit 08 Dormilón",
+      "description": "08 Kit de Dormitorio ",
+      "imageURL": "https://dismobel.es/44535-large_default/dormitorio-boho-20-de-lan-mobel.jpg",
+      "isFavourite": true,
+      "price": 499.9,
+      "section": "dormitorio",
+      "id": "629e1531e655592b12cf5369"
+    },
+    {
+      "productName": "Juego 01 Cocina",
+      "description": "Juego 01 de Cocina Completa ",
+      "imageURL": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/0181-c2101-r1529506-1531506680.jpg",
+      "isFavourite": true,
+      "price": 99.9,
+      "section": "cocina",
+      "id": "629e16afe655592b12d1cf83"
+    },
+    {
+      "productName": "Juego 02 Cocina",
+      "description": "Juego 02 de Cocina Completa ",
+      "imageURL": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/0181-c2101-r1529506-1531506680.jpg",
+      "isFavourite": true,
+      "price": 199.9,
+      "section": "cocina",
+      "id": "629e16afe655592b12d1cf84"
+    },
+    {
+      "productName": "Juego 03 Cocina",
+      "description": "Juego 31 de Cocina Completa ",
+      "imageURL": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/0181-c2101-r1529506-1531506680.jpg",
+      "isFavourite": false,
+      "price": 5699.9,
+      "section": "cocina",
+      "id": "629e16afe655592b12d1cf85"
+    },
+    {
+      "productName": "Juego 04 Cocina",
+      "description": "Juego 04 de Cocina Completa ",
+      "imageURL": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/0181-c2101-r1529506-1531506680.jpg",
+      "isFavourite": false,
+      "price": 4599.9,
+      "section": "cocina",
+      "id": "629e16afe655592b12d1cf86"
+    },
+    {
+      "productName": "Juego 05 Cocina",
+      "description": "Juego 05 de Cocina Completa ",
+      "imageURL": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/0181-c2101-r1529506-1531506680.jpg",
+      "isFavourite": false,
+      "price": 3799.9,
+      "section": "cocina",
+      "id": "629e16afe655592b12d1cf87"
+    },
+    {
+      "productName": "Juego 06 Cocina",
+      "description": "Juego 06 de Cocina Completa ",
+      "imageURL": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/0181-c2101-r1529506-1531506680.jpg",
+      "isFavourite": true,
+      "price": 369.9,
+      "section": "cocina",
+      "id": "629e16afe655592b12d1cf88"
+    },
+    {
+      "productName": "Juego 07 Cocina",
+      "description": "Juego 07 de Cocina Completa ",
+      "imageURL": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/0181-c2101-r1529506-1531506680.jpg",
+      "isFavourite": true,
+      "price": 589.9,
+      "section": "cocina",
+      "id": "629e16afe655592b12d1cf89"
+    },
+    {
+      "productName": "Juego 08 Cocina",
+      "description": "Juego 01 de Cocina Completa ",
+      "imageURL": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/0181-c2101-r1529506-1531506680.jpg",
+      "isFavourite": false,
+      "price": 1899.9,
+      "section": "cocina",
+      "id": "629e16afe655592b12d1cf8a"
+    },
+    {
+      "productName": "Salón 01 Blue",
+      "description": "Salón 01 azulado",
+      "imageURL": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/salon-moderno-blanco-con-vigas-1600353658.jpg",
+      "isFavourite": false,
+      "price": 9799.9,
+      "section": "salon",
+      "id": "629e1807e655592b12d41852"
+    },
+    {
+      "productName": "Salón 02 Blue",
+      "description": "Salón 02 azulado",
+      "imageURL": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/salon-moderno-blanco-con-vigas-1600353658.jpg",
+      "isFavourite": false,
+      "price": 8799.9,
+      "section": "salon",
+      "id": "629e1807e655592b12d41853"
+    },
+    {
+      "productName": "Salón 02 Blue",
+      "description": "Salón 02 azulado",
+      "imageURL": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/salon-moderno-blanco-con-vigas-1600353658.jpg",
+      "isFavourite": false,
+      "price": 9799.9,
+      "section": "salon",
+      "id": "629e1807e655592b12d41854"
+    },
+    {
+      "productName": "Salón 03 Blue",
+      "description": "Salón 03 azulado",
+      "imageURL": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/salon-moderno-blanco-con-vigas-1600353658.jpg",
+      "isFavourite": false,
+      "price": 4899.9,
+      "section": "salon",
+      "id": "629e1807e655592b12d41855"
+    },
+    {
+      "productName": "Salón 04 Blue",
+      "description": "Salón 04 azulado",
+      "imageURL": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/salon-moderno-blanco-con-vigas-1600353658.jpg",
+      "isFavourite": false,
+      "price": 2599.9,
+      "section": "salon",
+      "id": "629e1807e655592b12d41856"
+    },
+    {
+      "productName": "Salón 05 Blue",
+      "description": "Salón 05 azulado",
+      "imageURL": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/salon-moderno-blanco-con-vigas-1600353658.jpg",
+      "isFavourite": true,
+      "price": 1299.9,
+      "section": "salon",
+      "id": "629e1807e655592b12d41857"
+    },
+    {
+      "productName": "Salón 06 Blue",
+      "description": "Salón 06 azulado",
+      "imageURL": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/salon-moderno-blanco-con-vigas-1600353658.jpg",
+      "isFavourite": true,
+      "price": 799.9,
+      "section": "salon",
+      "id": "629e1807e655592b12d41858"
+    },
+    {
+      "productName": "Salón 07 Blue",
+      "description": "Salón 07 azulado",
+      "imageURL": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/salon-moderno-blanco-con-vigas-1600353658.jpg",
+      "isFavourite": false,
+      "price": 4379.9,
+      "section": "salon",
+      "id": "629e1807e655592b12d41859"
+    },
+    {
+      "productName": "Terraza 01",
+      "description": "Exterior 01 terraza",
+      "imageURL": "https://images.hola.com/imagenes/decoracion/20210625191262/decoracion-terrazas-con-plantas-am/0-962-935/plantas-terraza-19a-a.jpg",
+      "isFavourite": true,
+      "price": 379.9,
+      "section": "terraza",
+      "id": "629e19b0e655592b12d6dfda"
+    },
+    {
+      "productName": "Terraza 02",
+      "description": "Exterior 02 terraza",
+      "imageURL": "https://images.hola.com/imagenes/decoracion/20210625191262/decoracion-terrazas-con-plantas-am/0-962-935/plantas-terraza-19a-a.jpg",
+      "isFavourite": true,
+      "price": 129.9,
+      "section": "terraza",
+      "id": "629e19b0e655592b12d6dfdb"
+    },
+    {
+      "productName": "Terraza 03",
+      "description": "Exterior 03 terraza",
+      "imageURL": "https://images.hola.com/imagenes/decoracion/20210625191262/decoracion-terrazas-con-plantas-am/0-962-935/plantas-terraza-19a-a.jpg",
+      "isFavourite": false,
+      "price": 3579.9,
+      "section": "terraza",
+      "id": "629e19b0e655592b12d6dfdc"
+    },
+    {
+      "productName": "Terraza 04",
+      "description": "Exterior 04 terraza",
+      "imageURL": "https://images.hola.com/imagenes/decoracion/20210625191262/decoracion-terrazas-con-plantas-am/0-962-935/plantas-terraza-19a-a.jpg",
+      "isFavourite": false,
+      "price": 5829.9,
+      "section": "terraza",
+      "id": "629e19b0e655592b12d6dfdd"
+    },
+    {
+      "productName": "Terraza 05",
+      "description": "Exterior 05 terraza",
+      "imageURL": "https://images.hola.com/imagenes/decoracion/20210625191262/decoracion-terrazas-con-plantas-am/0-962-935/plantas-terraza-19a-a.jpg",
+      "isFavourite": false,
+      "price": 8879.9,
+      "section": "terraza",
+      "id": "629e19b0e655592b12d6dfde"
+    },
+    {
+      "productName": "Terraza 06",
+      "description": "Exterior 06 terraza",
+      "imageURL": "https://images.hola.com/imagenes/decoracion/20210625191262/decoracion-terrazas-con-plantas-am/0-962-935/plantas-terraza-19a-a.jpg",
+      "isFavourite": true,
+      "price": 569.9,
+      "section": "terraza",
+      "id": "629e19b0e655592b12d6dfdf"
+    },
+    {
+      "productName": "Terraza 07",
+      "description": "Exterior 07 terraza",
+      "imageURL": "https://images.hola.com/imagenes/decoracion/20210625191262/decoracion-terrazas-con-plantas-am/0-962-935/plantas-terraza-19a-a.jpg",
+      "isFavourite": true,
+      "price": 429.9,
+      "section": "terraza",
+      "id": "629e19b0e655592b12d6dfe0"
+    },
+    {
+      "productName": "Terraza 08",
+      "description": "Exterior 08 terraza",
+      "imageURL": "https://images.hola.com/imagenes/decoracion/20210625191262/decoracion-terrazas-con-plantas-am/0-962-935/plantas-terraza-19a-a.jpg",
+      "isFavourite": false,
+      "price": 2379.9,
+      "section": "terraza",
+      "id": "629e19b0e655592b12d6dfe1"
+    },
+    {
+      "productName": "Terraza 09",
+      "description": "Exterior 01 terraza",
+      "imageURL": "https://images.hola.com/imagenes/decoracion/20210625191262/decoracion-terrazas-con-plantas-am/0-962-935/plantas-terraza-19a-a.jpg",
+      "isFavourite": true,
+      "price": 229.9,
+      "section": "terraza",
+      "id": "629e19b0e655592b12d6dfe2"
+    },
+    {
+      "productName": "Terraza 10",
+      "description": "Exterior 01 terraza",
+      "imageURL": "https://images.hola.com/imagenes/decoracion/20210625191262/decoracion-terrazas-con-plantas-am/0-962-935/plantas-terraza-19a-a.jpg",
+      "isFavourite": true,
+      "price": 79.9,
+      "section": "terraza",
+      "id": "629e19b0e655592b12d6dfe3"
+    },
+    {
+      "productName": "Comedor 01",
+      "description": "Comedor 01 mesa madera",
+      "imageURL": "https://mubak.com/2685-large_default/mesa-comedor-redonda-extensible-de-110-cm.jpg",
+      "isFavourite": false,
+      "price": 5879.9,
+      "section": "comedor",
+      "id": "629e1b29e655592b12d93e1d"
+    },
+    {
+      "productName": "Comedor 02",
+      "description": "Comedor 02 mesa madera",
+      "imageURL": "https://mubak.com/2685-large_default/mesa-comedor-redonda-extensible-de-110-cm.jpg",
+      "isFavourite": false,
+      "price": 3979.9,
+      "section": "comedor",
+      "id": "629e1b29e655592b12d93e1e"
+    },
+    {
+      "productName": "Comedor 03",
+      "description": "Comedor 03 mesa madera",
+      "imageURL": "https://mubak.com/2685-large_default/mesa-comedor-redonda-extensible-de-110-cm.jpg",
+      "isFavourite": true,
+      "price": 479.9,
+      "section": "comedor",
+      "id": "629e1b29e655592b12d93e1f"
+    },
+    {
+      "productName": "Comedor 04",
+      "description": "Comedor 04 mesa madera",
+      "imageURL": "https://mubak.com/2685-large_default/mesa-comedor-redonda-extensible-de-110-cm.jpg",
+      "isFavourite": true,
+      "price": 319.9,
+      "section": "comedor",
+      "id": "629e1b29e655592b12d93e20"
+    },
+    {
+      "productName": "Comedor 05",
+      "description": "Comedor 05 mesa madera",
+      "imageURL": "https://mubak.com/2685-large_default/mesa-comedor-redonda-extensible-de-110-cm.jpg",
+      "isFavourite": false,
+      "price": 2289.9,
+      "section": "comedor",
+      "id": "629e1b29e655592b12d93e21"
+    },
+    {
+      "productName": "Comedor 06",
+      "description": "Comedor 06 mesa madera",
+      "imageURL": "https://mubak.com/2685-large_default/mesa-comedor-redonda-extensible-de-110-cm.jpg",
+      "isFavourite": false,
+      "price": 3689.9,
+      "section": "comedor",
+      "id": "629e1b29e655592b12d93e22"
+    },
+    {
+      "productName": "Comedor 07",
+      "description": "Comedor 07 mesa madera",
+      "imageURL": "https://mubak.com/2685-large_default/mesa-comedor-redonda-extensible-de-110-cm.jpg",
+      "isFavourite": true,
+      "price": 99.9,
+      "section": "comedor",
+      "id": "629e1b29e655592b12d93e23"
+    },
+    {
+      "productName": "Comedor 08",
+      "description": "Comedor 08 mesa madera",
+      "imageURL": "https://mubak.com/2685-large_default/mesa-comedor-redonda-extensible-de-110-cm.jpg",
+      "isFavourite": true,
+      "price": 259.9,
+      "section": "comedor",
+      "id": "629e1b29e655592b12d93e24"
+    },
+    {
+      "productName": "Despacho 01",
+      "description": "Despacho 01 workStation",
+      "imageURL": "https://www.ambar-muebles.com/112958-medium_default/mesa-de-despacho-moderna-calipso.jpg",
+      "isFavourite": true,
+      "price": 219.9,
+      "section": "despacho",
+      "id": "629e1cf8e655592b12dc8a0a"
+    },
+    {
+      "productName": "Despacho 02",
+      "description": "Despacho 02 workStation",
+      "imageURL": "https://www.ambar-muebles.com/112958-medium_default/mesa-de-despacho-moderna-calipso.jpg",
+      "isFavourite": true,
+      "price": 589.9,
+      "section": "despacho",
+      "id": "629e1cf8e655592b12dc8a0b"
+    },
+    {
+      "productName": "Despacho 03",
+      "description": "Despacho 03 workStation",
+      "imageURL": "https://www.ambar-muebles.com/112958-medium_default/mesa-de-despacho-moderna-calipso.jpg",
+      "isFavourite": false,
+      "price": 9249.9,
+      "section": "despacho",
+      "id": "629e1cf8e655592b12dc8a0c"
+    },
+    {
+      "productName": "Despacho 04",
+      "description": "Despacho 04 workStation",
+      "imageURL": "https://www.ambar-muebles.com/112958-medium_default/mesa-de-despacho-moderna-calipso.jpg",
+      "isFavourite": false,
+      "price": 4529.9,
+      "section": "despacho",
+      "id": "629e1cf8e655592b12dc8a0d"
+    },
+    {
+      "productName": "Despacho 05",
+      "description": "Despacho 05 workStation",
+      "imageURL": "https://www.ambar-muebles.com/112958-medium_default/mesa-de-despacho-moderna-calipso.jpg",
+      "isFavourite": true,
+      "price": 679.9,
+      "section": "despacho",
+      "id": "629e1cf8e655592b12dc8a0e"
+    },
+    {
+      "productName": "Despacho 06",
+      "description": "Despacho 06 workStation",
+      "imageURL": "https://www.ambar-muebles.com/112958-medium_default/mesa-de-despacho-moderna-calipso.jpg",
+      "isFavourite": true,
+      "price": 519.9,
+      "section": "despacho",
+      "id": "629e1cf8e655592b12dc8a0f"
+    },
+    {
+      "productName": "Despacho 07",
+      "description": "Despacho 07 workStation",
+      "imageURL": "https://www.ambar-muebles.com/112958-medium_default/mesa-de-despacho-moderna-calipso.jpg",
+      "isFavourite": false,
+      "price": 7239.9,
+      "section": "despacho",
+      "id": "629e1cf8e655592b12dc8a10"
+    },
+    {
+      "productName": "Despacho 08",
+      "description": "Despacho 08 workStation",
+      "imageURL": "https://www.ambar-muebles.com/112958-medium_default/mesa-de-despacho-moderna-calipso.jpg",
+      "isFavourite": true,
+      "price": 789.9,
+      "section": "despacho",
+      "id": "629e1cf8e655592b12dc8a11"
+    },
+    {
+      "productName": "Despacho 09",
+      "description": "Despacho 09 workStation",
+      "imageURL": "https://www.ambar-muebles.com/112958-medium_default/mesa-de-despacho-moderna-calipso.jpg",
+      "isFavourite": true,
+      "price": 119.9,
+      "section": "despacho",
+      "id": "629e1cf8e655592b12dc8a12"
+    },
+    {
+      "productName": "Despacho 10",
+      "description": "Despacho 10 workStation",
+      "imageURL": "https://www.ambar-muebles.com/112958-medium_default/mesa-de-despacho-moderna-calipso.jpg",
+      "isFavourite": false,
+      "price": 4349.9,
+      "section": "despacho",
+      "id": "629e1cf8e655592b12dc8a13"
+    },
+    {
+      "productName": "Despacho 11",
+      "description": "Despacho 11 workStation",
+      "imageURL": "https://www.ambar-muebles.com/112958-medium_default/mesa-de-despacho-moderna-calipso.jpg",
+      "isFavourite": false,
+      "price": 6539.9,
+      "section": "despacho",
+      "id": "629e1cf8e655592b12dc8a14"
+    },
+    {
+      "productName": "Despacho 12",
+      "description": "Despacho 12 workStation",
+      "imageURL": "https://www.ambar-muebles.com/112958-medium_default/mesa-de-despacho-moderna-calipso.jpg",
+      "isFavourite": true,
+      "price": 729.9,
+      "section": "despacho",
+      "id": "629e1cf8e655592b12dc8a15"
+    },
+    {
+      "productName": "Despacho 13",
+      "description": "Despacho 13 workStation",
+      "imageURL": "https://www.ambar-muebles.com/112958-medium_default/mesa-de-despacho-moderna-calipso.jpg",
+      "isFavourite": true,
+      "price": 249.9,
+      "section": "despacho",
+      "id": "629e1cf8e655592b12dc8a16"
+    },
+    {
+      "productName": "Despacho 14",
+      "description": "Despacho 14 workStation",
+      "imageURL": "https://www.ambar-muebles.com/112958-medium_default/mesa-de-despacho-moderna-calipso.jpg",
+      "isFavourite": true,
+      "price": 999.9,
+      "section": "despacho",
+      "id": "629e1cf8e655592b12dc8a17"
+    },
+    {
+      "productName": "Despacho 15",
+      "description": "Despacho 15 workStation",
+      "imageURL": "https://www.ambar-muebles.com/112958-medium_default/mesa-de-despacho-moderna-calipso.jpg",
+      "isFavourite": false,
+      "price": 9959.9,
+      "section": "despacho",
+      "id": "629e1cf8e655592b12dc8a18"
+    },
+    {
+      "productName": "Despacho 16",
+      "description": "Despacho 16 workStation",
+      "imageURL": "https://www.ambar-muebles.com/112958-medium_default/mesa-de-despacho-moderna-calipso.jpg",
+      "isFavourite": false,
+      "price": 639.9,
+      "section": "despacho",
+      "id": "629e1cf8e655592b12dc8a19"
+    },
+    {
+      "productName": "Despacho 17",
+      "description": "Despacho 01 workStation",
+      "imageURL": "https://www.ambar-muebles.com/112958-medium_default/mesa-de-despacho-moderna-calipso.jpg",
+      "isFavourite": true,
+      "price": 2329.9,
+      "section": "despacho",
+      "id": "629e1cf8e655592b12dc8a1a"
+    },
+    {
+      "productName": "Soporte TV",
+      "description": "Soporte Rustico para TV con cajoneras",
+      "imageURL": "https://res.cloudinary.com/manulk/image/upload/v1654758434/flat101/bkm96gxmkqoqqdbk4y7y.jpg",
+      "isFavourite": false,
+      "price": 234.98,
+      "section": "comedor",
+      "__v": 0,
+      "id": "62a19c22a22523ff9b51d17d"
+    },
+    {
+      "productName": "Comoda Rústica",
+      "description": "Comoda de Baño acoplada a la pared",
+      "imageURL": "https://res.cloudinary.com/manulk/image/upload/v1654759603/flat101/aqyhh1cbdhosblr68mhx.jpg",
+      "isFavourite": true,
+      "price": 449,
+      "section": "baño",
+      "__v": 0,
+      "id": "62a1a0b3a22523ff9b51d183"
+    },
+    {
+      "productName": "Auxilar para cocina",
+      "description": "Muebla auxiliar para cocina",
+      "imageURL": "https://res.cloudinary.com/manulk/image/upload/v1654759814/flat101/hohyre2bedydixw06c4y.png",
+      "isFavourite": true,
+      "price": 159.99,
+      "section": "",
+      "__v": 0,
+      "id": "62a1a186a22523ff9b51d189"
+    },
+    {
+      "productName": "Juego de Terraza",
+      "description": "Mesas y Sillas metalicas para la terraza",
+      "imageURL": "https://res.cloudinary.com/manulk/image/upload/v1654759939/flat101/btknwwsluo81sqjifqpv.jpg",
+      "isFavourite": true,
+      "price": 150,
+      "section": "terraza",
+      "__v": 0,
+      "id": "62a1a203a22523ff9b51d18f"
+    },
+    {
+      "productName": "EstudioJuvenil",
+      "description": "Juego de mesa para incorporar como estudio",
+      "imageURL": "https://res.cloudinary.com/manulk/image/upload/v1654760230/flat101/fxxgqz9mc5j0xx5zit89.jpg",
+      "isFavourite": false,
+      "price": 120,
+      "section": "",
+      "__v": 0,
+      "id": "62a1a326a22523ff9b51d202"
+    },
+    {
+      "productName": "Comoda ",
+      "description": "Cómoda decapé para el dormitorio",
+      "imageURL": "https://res.cloudinary.com/manulk/image/upload/v1654760753/flat101/jlwf3sa1avudomampng4.jpg",
+      "isFavourite": true,
+      "price": 100,
+      "section": "dormitorio",
+      "__v": 0,
+      "id": "62a1a530a22523ff9b51d209"
+    },
+    {
+      "productName": "Modular para TV",
+      "description": "Mueble modular para la televisión",
+      "imageURL": "https://res.cloudinary.com/manulk/image/upload/v1654761022/flat101/p39jyarrnzqtiz78okhz.webp",
+      "isFavourite": true,
+      "price": 129,
+      "section": "salon",
+      "__v": 0,
+      "id": "62a1a63ea22523ff9b51d210"
+    },
+    {
+      "productName": "Sofá",
+      "description": "Sofa para echarse a la siesta",
+      "imageURL": "https://res.cloudinary.com/manulk/image/upload/v1654761418/flat101/or5vw1riyfrs54ycsuf7.png",
+      "isFavourite": false,
+      "price": 1350,
+      "section": "salon",
+      "__v": 0,
+      "id": "62a1a7caa22523ff9b51d217"
+    },
+    {
+      "productName": "Silla cama sillon",
+      "description": "un todo en uno",
+      "imageURL": "https://res.cloudinary.com/manulk/image/upload/v1654761718/flat101/fj4ngumkcffnt01sqdf7.jpg",
+      "isFavourite": false,
+      "price": 120,
+      "section": "comedor",
+      "__v": 0,
+      "id": "62a1a8f6a22523ff9b51d21e"
+    },
+    {
+      "productName": "Despensa",
+      "description": "Se usa como despensa y para el midroondas",
+      "imageURL": "https://res.cloudinary.com/manulk/image/upload/v1654762293/flat101/knp2vsvyawuis22pgtm9.jpg",
+      "isFavourite": true,
+      "price": 390,
+      "section": "cocina",
+      "__v": 0,
+      "id": "62a1ab35a22523ff9b51d224"
+    },
+    {
+      "productName": "Sofa exterior",
+      "description": "Sofa ibizenco para jardines y terrazas",
+      "imageURL": "https://res.cloudinary.com/manulk/image/upload/v1654762722/flat101/ewwrawwmuajhotwnucpf.jpg",
+      "isFavourite": true,
+      "price": 600,
+      "section": "terraza",
+      "__v": 0,
+      "id": "62a1ace2a22523ff9b51d22a"
+    },
+    {
+      "productName": "Mesa Despacho",
+      "description": "Mesa Para despacho caoba en brillo",
+      "imageURL": "https://res.cloudinary.com/manulk/image/upload/v1654766307/flat101/ccfoe0k5nvapd33o7e6h.jpg",
+      "isFavourite": true,
+      "price": 699,
+      "section": "despacho",
+      "__v": 0,
+      "id": "62a1bae2a22523ff9b51d231"
+    },
+    {
+      "productName": "despacho blanco",
+      "description": "Mesa `para despacho",
+      "imageURL": "https://res.cloudinary.com/manulk/image/upload/v1654766471/flat101/eulu51gzcijnxk1jmnme.jpg",
+      "isFavourite": false,
+      "price": 120,
+      "section": "despacho",
+      "__v": 0,
+      "id": "62a1bb87a22523ff9b51d237"
+    },
+    {
+      "productName": "foo ",
+      "description": "foo",
+      "imageURL": "https://res.cloudinary.com/manulk/image/upload/v1654766607/flat101/rj9qgdyixqvbae3bl1a1.jpg",
+      "isFavourite": false,
+      "price": 999,
+      "section": "salon",
+      "__v": 0,
+      "id": "62a1bc0ea22523ff9b51d23c"
+    },
+    {
+      "productName": "dsffeer",
+      "description": "grrgd",
+      "imageURL": "https://res.cloudinary.com/manulk/image/upload/v1654766722/flat101/fuqmmpp7xy0yhbzzfgzi.jpg",
+      "isFavourite": false,
+      "price": 200,
+      "section": "cocina",
+      "__v": 0,
+      "id": "62a1bc82a22523ff9b51d243"
+    },
+    {
+      "productName": "desset",
+      "description": "Mueble de baño acoplado a la pared",
+      "imageURL": "https://res.cloudinary.com/manulk/image/upload/v1654766836/flat101/quz6bnwwksn0c2bljwcn.jpg",
+      "isFavourite": false,
+      "price": 120,
+      "section": "salon",
+      "__v": 0,
+      "id": "62a1bcf3a22523ff9b51d248"
+    },
+    {
+      "productName": "asdas",
+      "description": "Mueble de baño acoplado a la pared",
+      "imageURL": "https://res.cloudinary.com/manulk/image/upload/v1654767002/flat101/h6w52vq1zfs6jxn3to08.jpg",
+      "isFavourite": false,
+      "price": 218,
+      "section": "cocina",
+      "__v": 0,
+      "id": "62a1bd9aa22523ff9b51d251"
+    },
+    {
+      "productName": "dfssdf",
+      "description": "asdadsh",
+      "imageURL": "https://res.cloudinary.com/manulk/image/upload/v1654767130/flat101/foxzyfbbi0bnft8iouls.jpg",
+      "isFavourite": false,
+      "price": 123,
+      "section": "baño",
+      "__v": 0,
+      "id": "62a1be1aa22523ff9b51d254"
+    },
+    {
+      "productName": "saads",
+      "description": "fdsfsdfsf",
+      "imageURL": "https://res.cloudinary.com/manulk/image/upload/v1654767982/flat101/rcjosx2vphy8v3jowjcm.jpg",
+      "isFavourite": false,
+      "price": 342432,
+      "section": "dormitorio",
+      "__v": 0,
+      "id": "62a1c16ea22523ff9b51d256"
+    },
+    {
+      "productName": "Manu",
+      "description": "asdadsh",
+      "imageURL": "https://res.cloudinary.com/manulk/image/upload/v1654768064/flat101/c6mfyaibnqld3gxulozv.jpg",
+      "isFavourite": false,
+      "price": 423,
+      "section": "",
+      "__v": 0,
+      "id": "62a1c1bfa22523ff9b51d258"
+    },
+    {
+      "productName": "Cajonera",
+      "description": "Cajonera para el dormitorio",
+      "imageURL": "https://res.cloudinary.com/manulk/image/upload/v1654770632/flat101/sfu2pm83mctne3qv5xzy.jpg",
+      "isFavourite": false,
+      "price": 60,
+      "section": "dormitorio",
+      "__v": 0,
+      "id": "62a1cbc7a22523ff9b51d25f"
+    },
+    {
+      "productName": "jarron",
+      "description": "productos en madera para darle a tu baño un toque en estilo natural",
+      "imageURL": "https://assets.leroymerlin.es/is/image/lmes/15769985-0400/estanteria-2-estantes-lotus-madera-27x70.jpg?$lmesBgMobile$&fit=constrain,0",
+      "isFavourite": false,
+      "price": 15.99,
+      "section": "baño",
+      "__v": 0,
+      "id": "62a46148ddc2b7adc3c6f2b3"
+    }
+  ]
+}
