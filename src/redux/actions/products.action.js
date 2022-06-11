@@ -27,6 +27,7 @@ export const addProductAction = (product) => ({
 export const startAddProduct = (imgFile, product) => async (dispatch) => {
   try {
     const imageURL = await uploadFileToCloud(imgFile);
+
     const productToAdd = { ...product, imageURL };
 
     const resp = await addProduct(productToAdd);
@@ -50,7 +51,7 @@ export const startGetAllProducts = () => async (dispatch) => {
     }
     dispatch(setProducts(result.products));
   } catch (error) {
-    return error.message;
+    return error;
   }
 };
 
@@ -64,6 +65,6 @@ export const startSearchProducts = (term) => async (dispatch) => {
     dispatch(setProducts(resp.result));
     dispatch(setSearchResults(resp.result, term));
   } catch (error) {
-    return error.message;
+    return error;
   }
 };
