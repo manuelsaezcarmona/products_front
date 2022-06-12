@@ -11,8 +11,6 @@ import {
   nextPage
 } from '../../redux/actions/ui.action';
 
-import { ELEMENTS_PER_PAGE, MINIMUM_PAGE } from '../../services/constants';
-
 const mockData = require('../../services/mockproducts.json');
 
 const middlewares = [thunk];
