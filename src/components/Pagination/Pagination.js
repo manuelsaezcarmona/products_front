@@ -5,7 +5,11 @@
 /* eslint-disable react/jsx-indent */
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
-import { ArrowLeftOutlined, ArrowRightOutlined } from '@ant-design/icons';
+import {
+  ArrowLeftOutlined,
+  ArrowRightOutlined,
+  ConsoleSqlOutlined
+} from '@ant-design/icons';
 import { useDispatch } from 'react-redux';
 import styles from './styles.module.scss';
 
