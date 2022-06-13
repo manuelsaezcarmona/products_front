@@ -1,8 +1,8 @@
-# Movie Query.📽
+# Products Search Catalog. 🛒
 
-Pequeña aplicación para crear productos (en este caso muebles) y mostrarlos a modo de catalogo.
+Pequeña aplicación para crear productos (en este caso muebles) y mostrarlos a modo de catálogo.
 Permite filtrar por secciones y ordenar por precio y nombre
-Puedes verla en accion en https://products-search-catalog.netlify.app/
+Puedes verla en acción en https://products-search-catalog.netlify.app/
 
 ### Instalación 🔧
 
@@ -41,7 +41,7 @@ Para ejecutar las pruebas, desde el terminal lanza el comando :
 ```bash
 npm test
 ```
-
+### Tecnologías 🖥
 - React v18
   - React-Router v6 . Para la gestión de rutas
   - React-Redux - Redux-thunk . Para la implementación del patrón redux para la gestión del estado
@@ -64,7 +64,7 @@ Seguramente con el uso de Contexto seria suficiente.
 
 #### Definición de Datos.
 
-- products.- Se guardaran los productos que forman el catalogo
+- products.- Se guardaran los productos que forman el catálogo
 - ui.- Registro de los parametros necesarios para poder realizar las operaciones de UI que necesita la plataforma tales como paginacion, filtrado, ordenación y búsqueda, necesarios para el comportamiento dinámico de los componentes.
 
 #### Organización de componentes.
@@ -81,15 +81,15 @@ Un ejemplo es la carpeta Products, que dentro contiene :
 
 He usado dos implementaciones:
 
-1.  La carpeta styles recoge todos los estilos que se van a aplicar de manera global a la aplicacion. En el fichero settings.css se encuentra la guia de estilo con la definición de tipologias, colores y layouts globales que permitan una visualización homogenea de los elementos y una imagen de marca.
+1.  La carpeta styles recoge todos los estilos que se van a aplicar de manera global a la aplicación. En el fichero settings.css se encuentra la guia de estilo con la definición de tipologias, colores y layouts globales que permitan una visualización homogenea de los elementos y una imagen de marca.
 
-2.  Uso de cssModules, para cada componente se define clases unicas y exclusivas evitando la colision de clases. En estos css modules se aplicaran las variables definidas a nivel global.
+2.  Uso de cssModules, para cada componente se define clases únicas y exclusivas evitando la colision de clases. En estos css modules se aplicaran las variables definidas a nivel global.
 
 #### Uso de constantes
 
 En la medida de lo posible, intento evitar "hardcodear" los parametros, tener un único punto de entrada para que ,si se necesita realizar algún cambio, no haya que recorrer la app para cambiar esos parametros.
 
-He incorporado el fichero constants.js donde recogo los parametros como las secciones o la paginacion y , si en algun momento se quiere cambiar las secciones a unas recogidas en un backend solamente seria necesario redefinir esa constante.
+He incorporado el fichero constants.js donde recogo los parametros como las secciones o la paginación y , si en algun momento se quiere cambiar las secciones a unas recogidas en un backend solamente seria necesario redefinir esa constante.
 
 ### Mejoras.
 
