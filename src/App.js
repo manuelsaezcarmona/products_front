@@ -1,12 +1,12 @@
-import './App.css';
+import { Provider } from 'react-redux';
+import configureStore from './redux/store';
+import { AppRouter } from './routes/AppRouter';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Product Search</h1>
-      </header>
-    </div>
+    <Provider store={configureStore()}>
+      <AppRouter />
+    </Provider>
   );
 }
 

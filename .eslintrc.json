@@ -23,6 +23,8 @@
     "import/no-named-as-default": "off",
     "default-param-last": "off",
     "react/prop-types": "off",
-    "consistent-return": "off"
+    "consistent-return": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "implicit-arrow-linebreak": "off"
   }
 }

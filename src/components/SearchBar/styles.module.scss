@@ -1,0 +1,21 @@
+@import '../../styles/settings.scss';
+
+.search__container {
+  text-decoration: none;
+  color: $black-dark;
+  display: flex;
+  align-items: center;
+}
+
+.search__input {
+  outline: none;
+  border: none;
+  background-color: $gray-light;
+  font-size: 0.6em;
+  padding: 10px;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 481px) {
+}
