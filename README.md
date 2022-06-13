@@ -24,6 +24,23 @@ Necesitas realizar la instalación de las dependencias necesarias ejecuta el com
 npm install
 ```
 
+
+Este proyecto utiliza variables de entorno que por seguridad no se suben a los repositorios de github, con lo que se tendrá que crear un archivo .env con las siguientes variables. Solo es copiar y pegar el siguiente código:
+
+```powershell
+REACT_APP_API_URL=https://products-search-back.herokuapp.com
+REACT_APP_API_CLOUDYNARY=https://api.cloudinary.com/v1_1/manulk1/image/upload
+```
+
+En caso que estes levantando el backend en tu equipo local los parametros serian: 
+
+```powershell
+REACT_APP_API_URL=https://products-search-back.herokuapp.com
+REACT_APP_API_CLOUDYNARY=https://api.cloudinary.com/v1_1/manulk1/image/upload
+```
+
+Ahora ya puedes lanzar el proyecto con ...
+
 Cuando termine la instalación de los paquetes , puedes lanzar el proyecto con .
 
 ```bash
