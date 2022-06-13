@@ -27,7 +27,9 @@ export default function CustomSelect({ selectProps, handleChange = () => {} }) {
           value={value}
           className={selectProps.classOption}
         >
-          {value} - {selectProductsByFilter(value).length}
+          {selectProps.counterVisible
+            ? `${value} - ${selectProductsByFilter(value).length}`
+            : value}
         </option>
       ))}
     </select>

@@ -35,7 +35,8 @@ export default function FilterBar() {
             classSelect: styles.filterbar__select,
             classTitle: styles.filterbar__optiontitle,
             classOption: styles.filterbar__option,
-            optionValues: sections
+            optionValues: sections,
+            counterVisible: true
           }}
           handleChange={handleSetFilter}
         />
@@ -47,7 +48,8 @@ export default function FilterBar() {
             classSelect: styles.filterbar__select,
             classTitle: styles.filterbar__optiontitle,
             classOption: styles.filterbar__option,
-            optionValues: sorts
+            optionValues: sorts,
+            counterVisible: false
           }}
           handleChange={handleSetOrder}
         />
