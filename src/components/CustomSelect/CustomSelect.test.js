@@ -77,8 +77,6 @@ describe('Given the CustomSelect Component', () => {
 
     const optionItems = screen.getAllByRole('option', { value: 'precio' });
 
-    // console.log(optionItems[1]); Is the option con value = price
-
     userEvent.selectOptions(selectItem, optionItems[1]);
     expect(handleMock).toHaveBeenCalled();
     expect(optionItems[1].value).toBe('precio');
