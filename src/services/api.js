@@ -6,7 +6,7 @@ export const getAllProducts = async () => {
     const data = await resp.json();
     return data;
   } catch (error) {
-    return error.message;
+    return error;
   }
 };
 
@@ -21,7 +21,7 @@ export const searchProductsByTitleTerm = async (term) => {
     const data = await resp.json();
     return data;
   } catch (error) {
-    return error.message;
+    return error;
   }
 };
 
@@ -41,6 +41,6 @@ export const addProduct = async (product) => {
     const result = await resp.json();
     return result;
   } catch (error) {
-    return error.message;
+    return error;
   }
 };

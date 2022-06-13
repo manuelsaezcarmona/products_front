@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given the FilterBar Component then must be rendered (take a snapshot) 1`] = `
+<DocumentFragment>
+  <div
+    class="filterbar"
+  >
+    <form
+      class="filterbar__form"
+    >
+      <select
+        class="filterbar__select"
+        name="product-section"
+      >
+        <option
+          class="filterbar__optiontitle"
+          selected=""
+          value=""
+        >
+           Productos
+        </option>
+        <option
+          class="filterbar__option"
+          value="baño"
+        >
+          baño - 0
+        </option>
+        <option
+          class="filterbar__option"
+          value="dormitorio"
+        >
+          dormitorio - 0
+        </option>
+        <option
+          class="filterbar__option"
+          value="cocina"
+        >
+          cocina - 0
+        </option>
+        <option
+          class="filterbar__option"
+          value="salon"
+        >
+          salon - 0
+        </option>
+        <option
+          class="filterbar__option"
+          value="terraza"
+        >
+          terraza - 0
+        </option>
+        <option
+          class="filterbar__option"
+          value="comedor"
+        >
+          comedor - 0
+        </option>
+        <option
+          class="filterbar__option"
+          value="despacho"
+        >
+          despacho - 0
+        </option>
+      </select>
+      <select
+        class="filterbar__select"
+        name="order"
+      >
+        <option
+          class="filterbar__optiontitle"
+          selected=""
+          value=""
+        >
+          Ordenar Por
+        </option>
+        <option
+          class="filterbar__option"
+          value="precio"
+        >
+          precio - 0
+        </option>
+        <option
+          class="filterbar__option"
+          value="nombre"
+        >
+          nombre - 0
+        </option>
+        <option
+          class="filterbar__option"
+          value="seccion"
+        >
+          seccion - 0
+        </option>
+      </select>
+    </form>
+  </div>
+</DocumentFragment>
+`;
